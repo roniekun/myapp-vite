@@ -1,0 +1,24 @@
+.about__content{
+
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 100px;
+    padding:45px;
+    padding-bottom: 50px;
+    height: fit-content;
+    font-style: normal;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-family: 'Lato', sans-serif;
+    
+}
+@media (max-width: 768px) {
+
+    .about__content{
+
+        display:flex;
+        margin:10px;
+        font-size: 15px;
+    }
+}

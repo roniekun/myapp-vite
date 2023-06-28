@@ -1,0 +1,26 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+    padding: 0;
+    display: flex;
+    overflow-x: hidden;
+    background-color: #f5f5f5;
+    z-index: 1;
+    height: fit-content;
+    overflow-y: scroll; /* Enable vertical scrolling */
+    position: relative; /* Set the body to relative positioning */
+    min-height: 100vh;
+   
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+

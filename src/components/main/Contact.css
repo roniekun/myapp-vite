@@ -1,0 +1,13 @@
+.contact__container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    font-style: italic;
+    padding-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+  
+    }
+    .blur{
+        backdrop-filter: 2px;
+      }

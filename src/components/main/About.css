@@ -1,0 +1,12 @@
+.about__container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: auto;
+    font-style: italic;
+    padding-top: 100px;
+    flex-grow: 1;
+    box-sizing: border-box;
+
+    }
+  

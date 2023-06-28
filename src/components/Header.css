@@ -1,0 +1,24 @@
+.header__container{
+    top:0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: 100px;
+    margin: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    
+}
+
+  @media (max-width: 768px) {
+
+   .header__container{
+
+    background-color: #0B0E18;
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    height: 50px;
+  }  
+
+  }
