@@ -1,0 +1,20 @@
+.busy__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.busy__text{
+    position: absolute;
+    bottom: 150px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: black; 
+    font-size: 50px; 
+    z-index: 1;
+
+    
+
+}
