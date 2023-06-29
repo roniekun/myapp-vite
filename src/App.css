@@ -16,6 +16,7 @@
 #component-dark {
   background-color: #0B0E18;
   color: white;
+  fill:white;
   transition:.5s;
   .active{
     color:yellow;
