@@ -15,6 +15,16 @@
     font-size: 50px; 
     z-index: 1;
 
-    
+}
+  @media (max-width: 768px) {
+
+
+    .busy__text{
+     width:100vw;
+     font-size: 30px;
+
+
+ }
+
 
 }
