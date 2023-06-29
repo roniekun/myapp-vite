@@ -54,7 +54,7 @@
       display: grid;
       grid-template-columns: 1fr;
       place-items: center;
-      position: sticky;
+      position: fixed;
       justify-content: flex-start;
       overflow-x: hidden;
       height: 100vh;
