@@ -33,7 +33,7 @@
     scale: 1.01;
 
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .link__btn{
 
         color: black;

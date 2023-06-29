@@ -15,15 +15,15 @@ import { ThemeProvider, ThemeContext } from './context/ThemeContext';
 
 const App = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
-  const [showNavbar, setShowNavbar] = useState(window.innerWidth > 768);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 600);
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 600);
+  const [showNavbar, setShowNavbar] = useState(window.innerWidth > 600);
 
   const handleResize = useCallback(() => {
     const screenWidth = window.innerWidth;
-    setIsDesktop(screenWidth > 768);
-    setShowNavbar(screenWidth > 768);
-    setIsSmallScreen(screenWidth <= 768);
+    setIsDesktop(screenWidth > 600);
+    setShowNavbar(screenWidth > 600);
+    setIsSmallScreen(screenWidth <= 600);
   }, []);
 
   const handleScroll = useCallback(() => {
