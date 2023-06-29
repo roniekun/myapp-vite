@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import moredownImg from './png/moredown.png';
+import { ReactComponent as ArrowMoreDown } from './svg/arrowmoredown.svg';
 
 const StyledDiv = styled.div`
   .icon__active {
@@ -8,7 +8,7 @@ const StyledDiv = styled.div`
     width: 20px;
     transition: fill 0.3s ease;
 
-    img {
+    svg {
       fill: yellow;
       height: 20px;
       width: 20px;
@@ -17,7 +17,7 @@ const StyledDiv = styled.div`
     }
 
     &:hover {
-      img {
+      svg {
         transform: scale(1.2);
       }
     }
@@ -28,7 +28,7 @@ const ActiveIcon = () => {
   return (
     <StyledDiv>
       <div className="icon__active">
-        <img src={moredownImg} alt="Moredown" />
+        <ArrowMoreDown />
       </div>
     </StyledDiv>
   );

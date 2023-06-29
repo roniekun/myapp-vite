@@ -7,7 +7,9 @@
   margin: 0;
   bottom: 0;
   overflow-y: auto; 
-  font-family: 'Lato', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
+  font-family: 'VT323', monospace;
+  box-sizing: border-box;
 }
 /* DARKMODECONTEXT */
 /* Global */

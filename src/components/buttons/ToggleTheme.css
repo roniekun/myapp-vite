@@ -55,6 +55,8 @@
 
     .toggle__component{
             position: relative;
+            margin: auto;
+            align-self: center;
     }
 }
 

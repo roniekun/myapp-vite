@@ -123,7 +123,7 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
                   </AnimatePresence>
                 ))}
               </div>
-              <ToggleTheme isSmallScreen={isSmallScreen} fontColor="white" position="fixed" />
+              <ToggleTheme isSmallScreen={isSmallScreen} fontColor="white" position="absolute" />
 
               {isSmallScreen && (
                 <SocialLinks showNavbar={showNavbar} fontColor={'white'} />

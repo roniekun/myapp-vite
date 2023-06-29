@@ -16,6 +16,7 @@
     margin: 0;
     align-self: flex-end;
     bottom:0;
+    flex-grow: 1;
     
   }
 

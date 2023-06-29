@@ -1,3 +1,6 @@
+.menu__container{
+    box-sizing: border-box;
+}
 .menu__btn{
     color: #f5f5f5;
 }

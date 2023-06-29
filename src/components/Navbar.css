@@ -1,4 +1,6 @@
 .navbar__container {
+
+    box-sizing: border-box;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -6,7 +8,7 @@
     margin-top: 0;
     list-style: none;
     width: 100%;
-    position: fixed;
+    position: sticky;
     height: 100px;
     z-index: 9999;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1);
@@ -26,7 +28,7 @@
     letter-spacing: 2px;
     display: inline-block;
     text-transform:uppercase;
-    font-size: 12px;
+    font-size: 17px;
     font-weight: 500;
     margin-left:30px;
     margin-right: 30px;
@@ -48,10 +50,11 @@
   @media (max-width: 770px) {
   
     .navbar__container {
+      box-sizing: border-box;
       display: grid;
       grid-template-columns: 1fr;
       place-items: center;
-      position: fixed;
+      position: sticky;
       justify-content: flex-start;
       overflow-x: hidden;
       height: 100vh;
@@ -96,7 +99,6 @@
       text-transform: capitalize;
       opacity: 1;
       text-decoration: none;
-      font-family: 'Lato', sans-serif;
       font-weight: 900;
     }
   

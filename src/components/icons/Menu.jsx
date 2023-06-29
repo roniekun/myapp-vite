@@ -13,7 +13,7 @@ const Menu = ({ showNavbar, isSmallScreen, setShowNavbar }) => {
   return (
     <ThemeContext.Consumer>
       {theme => (
-    <div >
+    <div className='menu__container'>
 
       {isSmallScreen && (
         <div id={`component-${theme}`} className={theme === 'dark'  && showNavbar? 'menu__btn' : 'menu__btn white'}

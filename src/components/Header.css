@@ -8,6 +8,7 @@
     margin-top: 0;
     padding-bottom: 0;
     margin-bottom: 0;
+    box-sizing: border-box;
     
 }
 
@@ -19,6 +20,7 @@
     backdrop-filter: blur(10px); /* Blur effect */
     -webkit-backdrop-filter: blur(10px); /* Safari support */
     height: 50px;
+    box-sizing: border-box;
   }  
 
   }
