@@ -19,10 +19,16 @@
 }
   @media (max-width: 768px) {
 
+.busy__container{
+    width: 100vw;
+}
+
 
  .busy__text{
-    width: max-content;
+   
     font-size: 30px;
+    align-self: center;
+
     
 
 
