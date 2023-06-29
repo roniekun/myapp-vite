@@ -1,7 +1,8 @@
-import React from 'react';
 import { ReactComponent as Busysvg } from './svg/busyIcon.svg';
 import styled from 'styled-components';
 import './BusyIcon.css';
+import { ThemeContext } from '../../context/ThemeContext';
+
 
 const StyledBusyIcon = styled.div`
   position: relative;
@@ -12,14 +13,22 @@ const StyledBusyIcon = styled.div`
 
 
 function BusyIcon() {
+ 
   return (
-    <div className='busy__container'>
+    <ThemeContext.Consumer>
+  {({ theme }) => (
+    <div  id={`component-${theme}`} className='busy__container'>
       <StyledBusyIcon>
         <Busysvg />
-        <h1 className='busy__text'> He is currently busy...</h1>
+        <h1 id={`component-${theme}`} className='busy__text'> He is currently busy...</h1>
       </StyledBusyIcon>
     </div>
+
+)}
+</ThemeContext.Consumer>
+    
   );
+  
 }
 
 export default BusyIcon;
