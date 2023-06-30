@@ -11,7 +11,7 @@ const ToggleTheme = ({ isSmallScreen, fontColor, position }) => {
 
   return (
     <div className='toggle__component'>
-      {isSmallScreen && <h3 style={{ color: fontColor, positions: position }}>Toggle theme</h3>}
+      {isSmallScreen && <h3 style={{ color: fontColor, position: 'position' }}>Toggle theme</h3>}
       <input
         type="checkbox"
         id="checkboxInput"

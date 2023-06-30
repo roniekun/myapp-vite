@@ -12,36 +12,25 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
   const [isActive, setIsActive] = useState(true);
 
   const containerVariants = {
-    hidden: isSmallScreen
-      ? {
-          x: -100,
-          opacity: 0,
-          transition: {
-            type: 'keyframes',
-            values: [0, -120],
-            duration: 0.3,
-          },
-        }
-      : {
-          y: -100,
-          opacity: 0,
-          transition: {
-            type: 'keyframes',
-            values: [0, -120],
-            duration: 0.3,
-          },
-        },
-    visible: {
+    hidden: {
+      x: isSmallScreen ? -100 : 0,
+      y: isSmallScreen ? 0 : -10,
       opacity: 1,
-
-     x: 0,
-     y:0,
       transition: {
-        type: 'keyframes',
-        values: [0, -20],
-        duration: 0.3,
-        when: 'beforeChildren',
-        staggerChildren: 0.1,
+        type: isSmallScreen ? 'keyframes' : 'spring',
+        stiffness: 200,
+        damping: 25,
+        duration: 0.5,
+      },
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: 'spring',
+        stiffness: 200,
+        damping: 25,
+        duration: 0.5,
       },
     },
   };
@@ -80,16 +69,17 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
   return (
     <ThemeContext.Consumer>
       {(themeContext) => (
-        <AnimatePresence mode="wait">
-          {showNavbar && (
+        <AnimatePresence >
+      
             <motion.nav
-              className="navbar__container"
+              className={showNavbar? 'navbar__container': ''}
               initial="hidden"
               animate="visible"
               exit="hidden"
               variants={containerVariants}
               id={`component-${themeContext.theme}`}
             >
+             { showNavbar && (
               <div className="links__container">
                 {links.map((link, index) => (
                   <AnimatePresence key={link.to}>
@@ -121,15 +111,19 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
                       </motion.div>
                     )}
                   </AnimatePresence>
+                     
                 ))}
               </div>
-              <ToggleTheme isSmallScreen={isSmallScreen} fontColor="white" position="absolute" />
-
-              {isSmallScreen && (
-                <SocialLinks showNavbar={showNavbar} fontColor={'white'} />
+                 )}
+              <>
+              {showNavbar &&(
+              <ToggleTheme isSmallScreen={isSmallScreen} showNavbar={showNavbar} fontColor="white" position="relative" />
               )}
+              {isSmallScreen && showNavbar && (
+                <SocialLinks showNavbar={showNavbar}  fontColor={'white'} position={'relative'} />
+              )}
+            </>
             </motion.nav>
-          )}
         </AnimatePresence>
       )}
     </ThemeContext.Consumer>

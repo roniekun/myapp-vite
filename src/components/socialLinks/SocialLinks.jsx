@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
-const SocialLinks = ({fontColor, isSmallScreen, isDesktop, showNavbar}) => {
+const SocialLinks = ({fontColor, isSmallScreen, isDesktop, showNavbar, position}) => {
   const socialMediaLinks = [
     { name: 'Facebook', icon: 'facebook', url: 'https://www.facebook.com/ronieuxjpg' },
     { name: 'LinkedIn', icon: 'linkedin', url: 'https://linkedin.com/in/roniebenitez' },
@@ -34,7 +34,8 @@ const SocialLinks = ({fontColor, isSmallScreen, isDesktop, showNavbar}) => {
   return (
     <ThemeContext.Consumer>
   {({ theme }) => (
-    <div className='social__links__container'>
+   <div className='social__links__container' style={{ position: 'position' }}>
+
       <div className='btn__container'id={`component-${theme}`} >  
       
       {socialMediaLinks.map((link) => (

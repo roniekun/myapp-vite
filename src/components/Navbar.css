@@ -16,6 +16,8 @@
     margin-bottom: 0;
     padding-right: 120px;
     background-color: #fff;
+    transition: .5s;
+    
   
   }
   .links__container{
@@ -69,9 +71,12 @@
       padding-bottom: 90px;
       overflow-y: hidden;
       z-index: 9999;
-      min-height: 100vh;
+    
   
     }
+
+
+
    
     .links__container{
       flex-direction: column;
