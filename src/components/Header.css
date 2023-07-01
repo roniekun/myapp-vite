@@ -16,7 +16,7 @@
 
    .header__container{
 
-    background-color: #0B0E18;
+    background-color: black;
     backdrop-filter: blur(10px); /* Blur effect */
     -webkit-backdrop-filter: blur(10px); /* Safari support */
     height: 50px;

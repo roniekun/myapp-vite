@@ -12,19 +12,8 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
   const [isActive, setIsActive] = useState(true);
 
   const containerVariants = {
-    hidden: {
-      x: isSmallScreen ? -100 : 0,
-      y: isSmallScreen ? 0 : -10,
-      opacity: 1,
-      transition: {
-        type: isSmallScreen ? 'keyframes' : 'spring',
-        stiffness: 200,
-        damping: 25,
-        duration: 0.5,
-      },
-    },
+  
     visible: {
-      x: 0,
       opacity: 1,
       transition: {
         type: 'spring',
@@ -67,22 +56,18 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
   };
 
   return (
+    <>
+  
     <ThemeContext.Consumer>
       {(themeContext) => (
-        <AnimatePresence >
-      
-            <motion.nav
-              className={showNavbar? 'navbar__container': ''}
-              initial="hidden"
-              animate="visible"
-              exit="hidden"
-              variants={containerVariants}
+            <nav className= { showNavbar ? 'navbar__container' : 'navbar__hidden' }
               id={`component-${themeContext.theme}`}
             >
+            
              { showNavbar && (
               <div className="links__container">
                 {links.map((link, index) => (
-                  <AnimatePresence key={link.to}>
+                  <AnimatePresence mode='wait' key={link.to}>
                     {showNavbar && (
                       <motion.div
                         className="link__wrapper"
@@ -123,10 +108,13 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
                 <SocialLinks showNavbar={showNavbar}  fontColor={'white'} position={'relative'} />
               )}
             </>
-            </motion.nav>
-        </AnimatePresence>
+            </nav>
+  
       )}
     </ThemeContext.Consumer>
+
+    </>
+    
   );
 };
 
