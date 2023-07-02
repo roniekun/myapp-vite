@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 import { ThemeContext } from '../context/ThemeContext';
 import ToggleTheme from './buttons/ToggleTheme';
-import SocialLinks from './socialLinks/SocialLinks';
+import SocialLinks from './icons/SocialLinks';
 import { useState } from 'react';
 import ActiveIcon from './icons/ActiveIcon';
 

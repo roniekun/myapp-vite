@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
 import Footer from '../Footer';
-import AboutContent from './elements/AboutContent';
+import AboutContent from './sections/AboutContent';
 
 function About({ showNavbar }) {
   return (

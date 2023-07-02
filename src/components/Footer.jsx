@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
 import './Footer.css'; 
-import SocialLinks from './socialLinks/SocialLinks';
+import SocialLinks from './icons/SocialLinks';
 
 
 function Footer({ showNavbar}) {

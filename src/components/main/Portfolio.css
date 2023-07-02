@@ -1,13 +1,13 @@
 .portfolio__container{
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    font-style: italic;
-    padding-top: 100px;
-    margin-bottom: 100px;
-    position: relative;
+      mask-position: relative;
+      margin-top: 100px;
+      width: 100vw;
+    }
+   
+.carousel__container{
+     position: relative;
+
+
+
+    }
   
-    }
-    .blur{
-      backdrop-filter: 2px;
-    }

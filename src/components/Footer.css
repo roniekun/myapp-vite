@@ -20,11 +20,6 @@
     
   }
 
-  .hidden{
-    opacity: 0;
-  }
-  
-
  ul{
     display: flex;
     list-style: none;
@@ -59,14 +54,13 @@
         text-justify: center;
         padding-left: 0;
         padding-right: 0;
+        font-style: normal;
 
 
        
      
     }
-    .blur{
-        backdrop-filter: 2px;
-      }
+
 
 
 }
