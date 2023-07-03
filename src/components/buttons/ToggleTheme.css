@@ -53,12 +53,14 @@
     transition-duration: .2s;
   }
   
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
     .toggle__component{
             position: relative;
             margin: auto;
-            align-self: center;
+            /* margin-bottom: 50px; */
+            align-self: flex-start;
+           
     }
 }
 

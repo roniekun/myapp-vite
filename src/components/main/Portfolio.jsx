@@ -8,7 +8,7 @@ function Portfolio({showNavbar}) {
   return (
     <>
         <div className='portfolio__container'>
-          <h1>Featured</h1>
+          <h1 style={{width: '100Vw', display: 'flex', justifyContent: 'center'}}>Featured</h1>
           <div className='carousel__container'>
           {/* <PhotoCarousel/> */}
           </div>

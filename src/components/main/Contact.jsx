@@ -4,7 +4,7 @@ import Footer from '../Footer'
 function Contact({showNavbar}) {
   
   return (
-    <><div className='contact__container'>Contact me</div>
+    <><div className='contact__container'></div>
       {/* <Footer/> */}
     
     </>

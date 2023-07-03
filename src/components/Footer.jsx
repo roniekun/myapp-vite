@@ -24,7 +24,13 @@ function Footer({ showNavbar}) {
  {showFooter && (
     <> 
       <p id={`component-${theme}`}  className='text'>© 2023. All rights reserved. This site is a work in progress :)</p> 
-      <SocialLinks fontColor={"white"}/>
+      
+      <SocialLinks fillColor={"white"}/>
+     
+
+
+      
+      
 
     </>
   )}

@@ -2,44 +2,43 @@
     display: grid;
     grid-template-columns: 1fr;
     z-index: 2;
-    
-    
 
 }
 .btn__container{
     display: flex;
     flex-direction: row;
     bottom:0;
-    transition: .3s;
+    transition: all ease .5s;
+   
+    
   
 }
 .link__btn{
     border:none;
     cursor: pointer;
-    background-color: transparent;
     display: block;
     /* font-family: 'Rajdhani', sans-serif; */
     opacity: 0.7;
-    transition: .3s;
     inset: 10px;
     margin: 5px;
     list-style: none;
     text-decoration: none;
-    color: black;
- 
+   
 
     
 }
+.social__icon svg {
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    transition: .5s;
+
+  }
+  
 .link__btn:hover{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
     scale: 1.01;
+    transform: translateY(-5%);
 
 }
-@media (max-width: 600px) {
-    .link__btn{
 
-        color: black;
-
-    }
-    
-}

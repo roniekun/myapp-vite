@@ -7,6 +7,7 @@ import SocialLinks from './icons/SocialLinks';
 import { useState } from 'react';
 import ActiveIcon from './icons/ActiveIcon';
 
+
 const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
   const location = useLocation();
   const [isActive, setIsActive] = useState(true);
@@ -104,8 +105,12 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
               {showNavbar &&(
               <ToggleTheme isSmallScreen={isSmallScreen} showNavbar={showNavbar} fontColor="white" position="relative" />
               )}
-              {isSmallScreen && showNavbar && (
-                <SocialLinks showNavbar={showNavbar}  fontColor={'white'} position={'relative'} />
+              { showNavbar && (
+              <SocialLinks
+              showNavbar={showNavbar}
+              fillColor={isSmallScreen? 'white' : ''}   
+            />
+            
               )}
             </>
             </nav>

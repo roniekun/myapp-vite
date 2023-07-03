@@ -9,9 +9,8 @@
 
 }
 
-.menu__text{
-
-   
+.menu__text
+{
     cursor: pointer;
     font-size: 14px;  
     position: fixed;
@@ -23,5 +22,5 @@
     width: auto;
 }
 .menu__text:hover{
-    scale: 1.1;
+    opacity: 1;
 }
