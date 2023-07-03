@@ -7,8 +7,7 @@ import Contact from './components/main/Contact';
 import About from './components/main/About';
 import Portfolio from './components/main/Portfolio';
 import NotFound from './components/main/NotFound';
-import Logo from './components/icons/Logo';
-import Menu from './components/icons/Menu';
+
 import './App.css';
 import { ThemeProvider, ThemeContext } from './context/ThemeContext';
 
@@ -17,7 +16,7 @@ const App = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 600);
   const [isDesktop, setIsDesktop] = useState(window.innerWidth > 600);
-  const [showNavbar, setShowNavbar] = useState(window.innerWidth > 600);
+  const [showNavbar, setShowNavbar] = useState(false);
 
   const handleResize = useCallback(() => {
     const screenWidth = window.innerWidth;
@@ -66,12 +65,7 @@ const App = () => {
                   isSmallScreen={isSmallScreen}
                   setShowNavbar={setShowNavbar}
                 />
-               {showNavbar &&<Logo fontColor={isSmallScreen ? "white" : ""} />} 
-                <Menu
-                  showNavbar={showNavbar}
-                  isSmallScreen={isSmallScreen}
-                  setShowNavbar={setShowNavbar}
-                />
+
                 <Routes>
                   <Route path='/' element={<Home showNavbar={showNavbar} />} />
                   <Route path='/about' element={<About showNavbar={showNavbar} />} />

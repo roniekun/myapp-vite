@@ -2,6 +2,8 @@ import Navbar from './Navbar';
 import { ThemeContext } from '../context/ThemeContext';
 import './Header.css';
 import Logo from './icons/Logo';
+import Menu from './icons/Menu';
+
 
 function Header({ showNavbar, isSmallScreen, isDesktop, setShowNavbar }) {
   return (
@@ -15,6 +17,12 @@ function Header({ showNavbar, isSmallScreen, isDesktop, setShowNavbar }) {
             <Logo fontColor={"white"} />
 
             }
+           <Menu
+           showNavbar={showNavbar}
+           isSmallScreen={isSmallScreen}
+           setShowNavbar={setShowNavbar}
+           
+                />
             <Navbar
               showNavbar={showNavbar}
               isDesktop={isDesktop}

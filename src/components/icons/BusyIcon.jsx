@@ -10,8 +10,6 @@ const StyledBusyIcon = styled.div`
   height: 700px; // Set the desired height
 `;
 
-
-
 function BusyIcon() {
  
   return (
@@ -20,7 +18,7 @@ function BusyIcon() {
     <div  id={`component-${theme}`} className='busy__container'>
       <StyledBusyIcon>
         <Busysvg />
-        <h1 id={`component-${theme}`} className='busy__text'> He is currently busy...</h1>
+        {/* <h1 id={`component-${theme}`} className='busy__text'> He is currently busy...</h1> */}
       </StyledBusyIcon>
     </div>
 

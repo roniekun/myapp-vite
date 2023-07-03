@@ -10,7 +10,7 @@ function Portfolio({showNavbar}) {
         <div className='portfolio__container'>
           <h1>Featured</h1>
           <div className='carousel__container'>
-          <PhotoCarousel/>
+          {/* <PhotoCarousel/> */}
           </div>
     </div>
       {/* <Footer/> */}

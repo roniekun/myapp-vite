@@ -5,7 +5,7 @@ function Contact({showNavbar}) {
   
   return (
     <><div className='contact__container'>Contact me</div>
-      <Footer/>
+      {/* <Footer/> */}
     
     </>
     

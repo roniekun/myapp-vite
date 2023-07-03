@@ -1,13 +1,27 @@
 .menu__container{
     box-sizing: border-box;
+    z-index: 99999;
+    
 }
 .menu__btn{
     color: #f5f5f5;
-}
-.menu__btn__open{
+    letter-spacing: 2px;
 
-    color:black;
 }
-.white{
-    color: white;
+
+.menu__text{
+
+   
+    cursor: pointer;
+    font-size: 14px;  
+    position: fixed;
+    top: 30px;
+    left: 25px;
+    z-index:  9999;
+    opacity: 0.7;
+    height: fit-content;
+    width: auto;
+}
+.menu__text:hover{
+    scale: 1.1;
 }

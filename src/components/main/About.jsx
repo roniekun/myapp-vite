@@ -7,7 +7,7 @@ function About({ showNavbar }) {
   return (
     <div className='about__container'>
       <AboutContent />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

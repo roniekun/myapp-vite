@@ -1,7 +1,7 @@
 .social__links__container{
     display: grid;
     grid-template-columns: 1fr;
-    z-index: 9;
+    z-index: 2;
     
     
 
