@@ -1,7 +1,7 @@
 import Navbar from './Navbar';
 import { ThemeContext } from '../context/ThemeContext';
 import './Header.css';
-import Logo from './icons/Logo';
+// import Logo from './icons/Logo';
 import Menu from './icons/Menu';
 
 
@@ -10,19 +10,15 @@ function Header({ showNavbar, isSmallScreen, isDesktop, setShowNavbar }) {
     <ThemeContext.Consumer>
       {({ theme }) => (
         <>
-          <div className='header__container'>
-          <div id={`component-${theme}`} >
-             {isSmallScreen && !showNavbar && 
-            // <Logo fontColor={isSmallScreen ? "white" : "black"} />
-            <Logo fontColor={"white"} />
-
-            }
-           <Menu
+          <div id={`component-${theme}`}  className='header__container'>
+            <div className='menu__header'>
+            <Menu
            showNavbar={showNavbar}
            isSmallScreen={isSmallScreen}
            setShowNavbar={setShowNavbar}
-           
-                />
+            />
+            </div>
+            <div>
             <Navbar
               showNavbar={showNavbar}
               isDesktop={isDesktop}
@@ -30,7 +26,7 @@ function Header({ showNavbar, isSmallScreen, isDesktop, setShowNavbar }) {
               setShowNavbar={setShowNavbar}
             />
             </div>
-          </div>
+            </div>
         </>
       )}
     </ThemeContext.Consumer>

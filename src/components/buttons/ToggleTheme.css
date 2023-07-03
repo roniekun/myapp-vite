@@ -3,9 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin: 40px 35px;
-    right: 0;
-    position: fixed;
+    position: relative;
     opacity:0.9;
 
 }
@@ -57,9 +55,7 @@
 
     .toggle__component{
             position: relative;
-            margin: auto;
-            /* margin-bottom: 50px; */
-            align-self: flex-start;
+
            
     }
 }

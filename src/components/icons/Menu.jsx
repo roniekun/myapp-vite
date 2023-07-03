@@ -1,6 +1,6 @@
 import React from 'react';
 import './Menu.css';
-import { Sling as Hamburger } from 'hamburger-react';
+import { Turn as Hamburger } from 'hamburger-react';
 import { ThemeContext } from '../../context/ThemeContext';
 
 const Menu = ({ showNavbar, isSmallScreen, setShowNavbar }) => {
@@ -17,18 +17,9 @@ const Menu = ({ showNavbar, isSmallScreen, setShowNavbar }) => {
             <div
               id={`component-${theme}`}
               className='menu__btn'
-              style={{
-                position: 'fixed',
-                top: '0',
-                right: '15px',
-                zIndex: '9999',
-                opacity: '0.7',
-                height: 'fit-content',
-                width: 'auto'
-              }}
               onClick={handleClick}
             >
-              <Hamburger toggled={showNavbar} toggle={setShowNavbar} size={23} />
+              <Hamburger toggled={showNavbar} toggle={setShowNavbar} size={20} />
             </div>
           ) : (
             <h1

@@ -1,6 +1,12 @@
 .menu__container{
-    box-sizing: border-box;
     z-index: 99999;
+    position: relative;
+    height: 75px;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
     
 }
 .menu__btn{
@@ -13,9 +19,7 @@
 {
     cursor: pointer;
     font-size: 14px;  
-    position: fixed;
-    top: 30px;
-    left: 25px;
+    position: relative;
     z-index:  9999;
     opacity: 0.7;
     height: fit-content;
@@ -23,4 +27,18 @@
 }
 .menu__text:hover{
     opacity: 1;
+}
+@media (max-width: 600px) {
+
+    .menu__container{
+        box-sizing: border-box;
+        z-index: 99999;
+        position: relative;
+        align-self: flex-end;
+        height: fit-content;
+
+        
+    }
+
+    
 }

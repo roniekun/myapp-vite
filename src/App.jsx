@@ -7,7 +7,6 @@ import Contact from './components/main/Contact';
 import About from './components/main/About';
 import Portfolio from './components/main/Portfolio';
 import NotFound from './components/main/NotFound';
-
 import './App.css';
 import { ThemeProvider, ThemeContext } from './context/ThemeContext';
 
