@@ -1,11 +1,11 @@
 import React from 'react'
 import './Contact.css'
 import Footer from '../Footer'
-function Contact({showNavbar}) {
+function Contact({isSmallScreen}) {
   
   return (
     <><div className='contact__container'></div>
-      {/* <Footer/> */}
+      <Footer isSmallScreen={isSmallScreen}/>
     
     </>
     

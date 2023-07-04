@@ -5,7 +5,7 @@ import Footer from '../Footer';
 import PhotoCarousel from './sections/elements/PhotoCarousel';
 
 
-function Portfolio({showNavbar}) {
+function Portfolio({showNavbar, isSmallScreen}) {
   return (
     <>
         <div className='portfolio__container'>
@@ -15,7 +15,7 @@ function Portfolio({showNavbar}) {
           {/* <PhotoCarousel/> */}
           </div>
     </div>
-      <Footer/>
+      <Footer  isSmallScreen={isSmallScreen}/>
     </>
   );
 }

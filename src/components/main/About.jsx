@@ -3,11 +3,11 @@ import './About.css';
 import Footer from '../Footer';
 import AboutContent from './sections/AboutContent';
 
-function About({ showNavbar }) {
+function About({isSmallScreen }) {
   return (
     <div className='about__container'>
       <AboutContent />
-      {/* <Footer /> */}
+      <Footer isSmallScreen={isSmallScreen} />
     </div>
   );
 }

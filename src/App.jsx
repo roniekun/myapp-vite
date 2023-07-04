@@ -67,9 +67,9 @@ const App = () => {
 
                 <Routes>
                   <Route path='/' element={<Home isSmallScreen={isSmallScreen} showNavbar={showNavbar} />} />
-                  <Route path='/about' element={<About showNavbar={showNavbar} />} />
-                  <Route path='/portfolio' element={<Portfolio showNavbar={showNavbar} />} />
-                  <Route path='/contact' element={<Contact showNavbar={showNavbar} />} />
+                  <Route path='/about' element={<About isSmallScreen={isSmallScreen} showNavbar={showNavbar} />} />
+                  <Route path='/portfolio' element={<Portfolio isSmallScreen={isSmallScreen}  showNavbar={showNavbar} />} />
+                  <Route path='/contact' element={<Contact isSmallScreen={isSmallScreen}  showNavbar={showNavbar} />} />
                   <Route component={NotFound} />
                 </Routes>
                 <AutoscrollButton
