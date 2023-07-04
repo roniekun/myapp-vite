@@ -1,17 +1,13 @@
 .social__links__container{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
 }
 .link__btn{
     border:none;
     cursor: pointer;
     display: flex;
-
     /* font-family: 'Rajdhani', sans-serif; */
     opacity: 0.7;
-    inset: 10px;
     margin: 10px;
     list-style: none;
     text-decoration: none;
@@ -25,13 +21,37 @@
     height: 17px;
     opacity: 1;
     transition: .5s;
+    padding-bottom: 3px;
 
   }
-  
-.link__btn:hover{
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+
+  .social__icon svg:hover {
     scale: 1.01;
     transform: translateY(-5%);
+  } 
+  .social__icon svg:hover:nth-child(1) {
+    fill:#0A66C2;
+  
+  }
+  .social__icon svg:hover:nth-child(2) {
+    fill:#181717;
+  
+  }
+  .social__icon svg:hover:nth-child(3) {
+    fill:#1877F2;
+  
+  }
+  .social__icon svg:hover:nth-child(4) {
+    fill:#E4405F;
+  
+  }
+  
+  
+.link__btn:hover{
+  
+    scale: 1.01;
+    transform: translateY(-5%);
+    
 
 }
 
@@ -39,5 +59,7 @@
 
 .social__links__container{
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
 }

@@ -13,10 +13,10 @@ import { ThemeContext } from '../../context/ThemeContext';
 
 const SocialLinks = ({ isSmallScreen, isDesktop, showNavbar, fillColor, displayNames, flexDirection}) => {
   const socialMediaLinks = [
-    { name: 'LinkedIn', icon:  <LinkedinIcon />, url: 'https://linkedin.com/in/roniebenitez' },
-    { name: 'Github', icon:  <GithubIcon/>, url: 'https://www.github.com/roniekun' },
-    { name: 'Facebook', icon: <FacebookIcon/>, url: 'https://www.facebook.com/ronieuxjpg' },
-    { name: 'Instagram', icon: <InstagramIcon/>, url: 'https://www.instagram.com/ronieuxjpg' },
+    { name: 'LinkedIn', fill: '#0A66C2', icon:  <LinkedinIcon />, url: 'https://linkedin.com/in/roniebenitez', userhandle : '/in/roniebenitez' },
+    { name: 'Github', fill: '#181717',icon:  <GithubIcon/>, url: 'https://www.github.com/roniekun',userhandle: '/roniekun' },
+    { name: 'Facebook', fill: '#1877F2', icon: <FacebookIcon/>, url: 'https://www.facebook.com/ronieuxjpg', userhandle: '@ronieuxjpg' },
+    { name: 'Instagram',fill: '#E4405F', icon: <InstagramIcon/>, url: 'https://www.instagram.com/ronieuxjpg', userhandle: '@ronieuxjpg' },
  
     // Add more social media links as needed
     ];
@@ -26,8 +26,8 @@ const SocialLinks = ({ isSmallScreen, isDesktop, showNavbar, fillColor, displayN
   {({ theme }) => (
   <div className='social__links__container' style={isSmallScreen ? { flexDirection: flexDirection } : {}}>
       {displayNames && isSmallScreen &&
-       <div><h2 style={{
-        color: fillColor, fontFamily: 'Inter', margin: "20px", fontWeight: '500'}}>Follow</h2>
+       <div><p style={{
+        color: fillColor, fontFamily: 'Inter', margin: "12px", fontWeight: '500'}}>Follow my accounts:</p>
         </div> }
       {socialMediaLinks.map((link) => (
     <a
@@ -43,8 +43,8 @@ const SocialLinks = ({ isSmallScreen, isDesktop, showNavbar, fillColor, displayN
     <div style={{ marginRight: '7px' }}> 
     {link.icon}
     </div>
-    <div style={{fontSize: '13px'}}>
-      {displayNames && <span>{link.name}</span>}
+    <div style={{fontSize: '11px'}}>
+      {displayNames && <span>{link.userhandle}</span>}
       </div>
 
   </a>
