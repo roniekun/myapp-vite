@@ -1,6 +1,7 @@
 import React from 'react';
 import './Portfolio.css';
-// import Footer from '../Footer';
+import PortfolioContent from './sections/PortfolioContent';
+import Footer from '../Footer';
 import PhotoCarousel from './sections/elements/PhotoCarousel';
 
 
@@ -8,12 +9,13 @@ function Portfolio({showNavbar}) {
   return (
     <>
         <div className='portfolio__container'>
+        <PortfolioContent/>
           <h1 style={{width: '100Vw', display: 'flex', justifyContent: 'center'}}>Featured</h1>
           <div className='carousel__container'>
           {/* <PhotoCarousel/> */}
           </div>
     </div>
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 }

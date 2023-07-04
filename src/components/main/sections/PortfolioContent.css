@@ -1,26 +1,23 @@
 .indent-75px{
         text-indent:75px;
 }
-.pading-75px{
-        padding: 75px;
-}
-.padding-60px{ 
-        padding:60px;
-}
 .container{
         height: auto;
+       
 }
 
 .hero__text__container{
+        padding-top: 75px;
         display: flex;
         flex-direction: column;
         width: 100vw;
         justify-content: center;
         align-items: center;
         position: relative;
-        height: 100vh;
+        height: 100%;
         color: #0E0F10;
-        border-bottom: #0E0F10 solid;
+        border-bottom: #0E0F10 solid; 
+     
 
 }
 
@@ -39,13 +36,13 @@
 
 }
 .services__container{ 
-
+        padding-top: 75px;
         display: flex;
         flex-direction: column;
         width: 100vw;
         align-items: center;
         position: relative;
-        height: 100vh;
+        height: 100%;
         color: #0E0F10;
         justify-content: space-evenly;
 
@@ -73,7 +70,7 @@
 @media (max-width: 600px) {
 
     .hero__text__container{
-            padding: 60px;
+            padding: 10%;
             width: 100vw;
             height: 100vh;
 
@@ -83,6 +80,7 @@
      
             transition: .3s;
             word-wrap: none;
+            font-size: 60px;
     }
     .text__description{
             font-size: 16px;
@@ -90,7 +88,7 @@
     }
     .services__container{
 
-        padding: 60px;
+        padding: 10%;
     }
 
 }

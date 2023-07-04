@@ -1,7 +1,7 @@
 import React from 'react'
-import './HomeContent.css';
+import './PortfolioContent.css';
 
-const HomeContent = () => {
+const PortfolioContent = () => {
   return (
     <div className='container'>
       <section className='hero__text__container'>
@@ -47,4 +47,4 @@ const HomeContent = () => {
   )
 }
 
-export default HomeContent
+export default PortfolioContent
