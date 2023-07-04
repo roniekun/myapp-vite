@@ -7,7 +7,7 @@ const AboutContent = () => {
 
         <article>
 
-            <h2 className='about__cta'>Hi! I'm Ron</h2>
+            <h2 className='about__cta'>Hi! I'm RON</h2>
 
            <p className='about__text description indent-75px'>A self-taught web developer with passion for creating stunning and functional websites. <br/>
         
