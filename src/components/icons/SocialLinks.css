@@ -21,8 +21,8 @@
     
 }
 .social__icon svg {
-    width: 18px;
-    height: 18px;
+    width: 17px;
+    height: 17px;
     opacity: 1;
     transition: .5s;
 
@@ -35,3 +35,9 @@
 
 }
 
+@media (max-width: 600px) {
+
+.social__links__container{
+    margin-bottom: 20px;
+}
+}

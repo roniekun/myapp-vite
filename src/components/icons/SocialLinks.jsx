@@ -25,6 +25,10 @@ const SocialLinks = ({ isSmallScreen, isDesktop, showNavbar, fillColor, displayN
     <ThemeContext.Consumer>
   {({ theme }) => (
   <div className='social__links__container' style={isSmallScreen ? { flexDirection: flexDirection } : {}}>
+      {displayNames && isSmallScreen &&
+       <div><h2 style={{
+        color: fillColor, fontFamily: 'Inter', margin: "20px", fontWeight: '500'}}>Follow</h2>
+        </div> }
       {socialMediaLinks.map((link) => (
     <a
     id={`component-${theme}`}
@@ -35,11 +39,11 @@ const SocialLinks = ({ isSmallScreen, isDesktop, showNavbar, fillColor, displayN
     style={{fill: fillColor,color:fillColor}}
     rel="noopener noreferrer"
   >
-    
-    <div style={{ marginRight: '10px' }}> 
+ 
+    <div style={{ marginRight: '7px' }}> 
     {link.icon}
     </div>
-    <div style={{fontSize: '15px'}}>
+    <div style={{fontSize: '13px'}}>
       {displayNames && <span>{link.name}</span>}
       </div>
 
