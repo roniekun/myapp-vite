@@ -1,59 +1,96 @@
-.heroText__container{
+.indent-75px{
+        text-indent:75px;
+}
+.pading-75px{
+        padding: 75px;
+}
+.padding-60px{ 
+        padding:60px;
+}
+.container{
+        height: auto;
+}
+
+.hero__text__container{
         display: flex;
         flex-direction: column;
-        padding: 75px;
         width: 100vw;
         justify-content: center;
         align-items: center;
         position: relative;
-        height: 70vh;
+        height: 100vh;
+        color: #0E0F10;
+        border-bottom: #0E0F10 solid;
 
 }
-.heroText{
+
+.hero__text{
         letter-spacing: 3px;
         font-size: 75px;
         transition: .3s;
-        transform: translateY(0);
-        opacity: 0.8;
         margin-bottom: 2%;
 }
-.heroText__description{
+.description{
         font-size: 16px;
         line-height: 1.5;
         margin-bottom: 10px;
         text-align: justify;
-        text-indent:75px;
+       
+
+}
+.services__container{ 
+
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+        position: relative;
+        height: 100vh;
+        color: #0E0F10;
+        justify-content: space-evenly;
+
+
+
+}
+.services{
+
+        font-size: 45px;
+        font-weight: 600;
+
+
+}
+.service__lists{
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
 
 }
 
+
+
+
 @media (max-width: 600px) {
 
-    .heroText__container{
-            display: flex;
-            flex-direction: column;
+    .hero__text__container{
             padding: 60px;
             width: 100vw;
-            justify-content: center;
-            align-items: center;
-            position: relative;
             height: 100vh;
 
+
     }
-    .heroText{
-            letter-spacing: 3px;
-            font-size: 50px;
+    .hero__text{
+     
             transition: .3s;
-            transform: translateY(0);
-            opacity: 0.8;
-            margin-bottom: 7%;
+            word-wrap: none;
     }
-    .heroText__description{
+    .text__description{
             font-size: 16px;
-            line-height: 1.5;
-            margin-bottom: 10px;
-            text-align: justify;
-            text-indent:75px;
     
+    }
+    .services__container{
+
+        padding: 60px;
     }
 
 }
