@@ -11,7 +11,8 @@
     position: relative;
     height: 75px;
     z-index: 8888;
-    background-color: transparent;
+    background-color: #fff;
+  
     transform: translateY(0);
     
   
