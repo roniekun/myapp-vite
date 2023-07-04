@@ -115,7 +115,10 @@
     .links__container{
       flex-direction: column;
       display: flex;
-      align-self: center;
+      align-items: center;
+      height: 50%;
+      justify-content: space-evenly;
+   
 
     }
   
@@ -125,6 +128,7 @@
       align-items: center;
       flex-direction: column;
       opacity: 1;
+      justify-content: space-evenly;
   
     }
   
@@ -132,10 +136,10 @@
       display: flex;
       color: white;
       font-size: 24px;
-      margin-bottom: 20px;
       text-transform: lowercase;
       opacity: 1;
       text-decoration: none;
+      justify-content: space-evenly;
     }
   
     .navbar__link:hover {
