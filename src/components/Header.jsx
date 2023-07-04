@@ -16,6 +16,7 @@ function Header({ showNavbar, isSmallScreen, isDesktop, setShowNavbar }) {
            showNavbar={showNavbar}
            isSmallScreen={isSmallScreen}
            setShowNavbar={setShowNavbar}
+           displayNames={false}
             />
             </div>
             <div>

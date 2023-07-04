@@ -4,7 +4,7 @@ import './Footer.css';
 import SocialLinks from './icons/SocialLinks';
 
 
-function Footer({ showNavbar}) {
+function Footer({ showNavbar, isSmallScreen}) {
   const [showFooter, setShowFooter] = useState(window.innerWidth > 768);
 
   useEffect(() => {
@@ -23,15 +23,12 @@ function Footer({ showNavbar}) {
     <div id={`component-${theme}`} className={`footer__container ${showFooter ? 'footer__container' :'hidden'}`}>
  {showFooter && (
     <> 
-      <p id={`component-${theme}`}  className='text'>© 2023. All rights reserved. This site is a work in progress :)</p> 
-      
-      <SocialLinks fillColor={"white"}/>
-     
+      <SocialLinks fillColor={"white"} 
+      displayNames={true} 
+      isSmallScreen={isSmallScreen} 
+      flexDirection={"column"}/>
 
-
-      
-      
-
+      <p id={`component-${theme}`}  className='text'>© 2023. All rights reserved. This site is a work in progress :)</p>  
     </>
   )}
  

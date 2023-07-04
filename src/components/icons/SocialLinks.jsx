@@ -11,7 +11,7 @@ import { ThemeContext } from '../../context/ThemeContext';
 
 
 
-const SocialLinks = ({ isSmallScreen, isDesktop, showNavbar, fillColor}) => {
+const SocialLinks = ({ isSmallScreen, isDesktop, showNavbar, fillColor, displayNames, flexDirection}) => {
   const socialMediaLinks = [
     { name: 'LinkedIn', icon:  <LinkedinIcon />, url: 'https://linkedin.com/in/roniebenitez' },
     { name: 'Github', icon:  <GithubIcon/>, url: 'https://www.github.com/roniekun' },
@@ -24,10 +24,7 @@ const SocialLinks = ({ isSmallScreen, isDesktop, showNavbar, fillColor}) => {
   return (
     <ThemeContext.Consumer>
   {({ theme }) => (
-   <div className='social__links__container' >
-
-      <div className='btn__container'id={`component-${theme}`} >  
-      
+  <div className='social__links__container' style={isSmallScreen ? { flexDirection: flexDirection } : {}}>
       {socialMediaLinks.map((link) => (
     <a
     id={`component-${theme}`}
@@ -35,14 +32,19 @@ const SocialLinks = ({ isSmallScreen, isDesktop, showNavbar, fillColor}) => {
     key={link.name}
     href={link.url}
     target="_blank"
-    style={{fill: fillColor}}
+    style={{fill: fillColor,color:fillColor}}
     rel="noopener noreferrer"
   >
-    {link.icon} 
+    
+    <div style={{ marginRight: '10px' }}> 
+    {link.icon}
+    </div>
+    <div style={{fontSize: '15px'}}>
+      {displayNames && <span>{link.name}</span>}
+      </div>
 
   </a>
         ))}</div>
-      </div>
         )}
         </ThemeContext.Consumer>
   );

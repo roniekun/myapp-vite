@@ -5,7 +5,7 @@ import Footer from '../Footer';
 
 
 
-function Home({showNavbar}) {
+function Home({showNavbar,isSmallScreen}) {
   
 
   return (
@@ -16,7 +16,7 @@ function Home({showNavbar}) {
     
     </section>
   </div>
-      <Footer/>
+      <Footer isSmallScreen={isSmallScreen}/>
   
   </>
   

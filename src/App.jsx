@@ -66,7 +66,7 @@ const App = () => {
                 />
 
                 <Routes>
-                  <Route path='/' element={<Home showNavbar={showNavbar} />} />
+                  <Route path='/' element={<Home isSmallScreen={isSmallScreen} showNavbar={showNavbar} />} />
                   <Route path='/about' element={<About showNavbar={showNavbar} />} />
                   <Route path='/portfolio' element={<Portfolio showNavbar={showNavbar} />} />
                   <Route path='/contact' element={<Contact showNavbar={showNavbar} />} />

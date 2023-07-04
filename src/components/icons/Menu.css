@@ -36,6 +36,7 @@
         position: relative;
         align-self: flex-end;
         height: fit-content;
+        height: max-content;
 
         
     }
