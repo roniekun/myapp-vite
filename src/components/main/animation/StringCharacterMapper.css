@@ -12,17 +12,29 @@
 
 }
 
-.char__item.hovered {
+.hovered{
+
+   transform: scale(1.5);
+  font-size: 100px;
+  font-weight: 900;
+  color: #151515;
+  border-radius: 7px;
+  z-index: 3;
+  
+ 
+}
+
+.char__item {
   margin-right: 5px;
   transition: ease-in-out .3s;
-  color: #3E3E3E;
+  color: black;
  width: fit-content;
   
 
   
 }
 
-.char__item.hovered:hover {
+.char__item:hover {
   transform: scale(1.5);
   font-size: 100px;
   font-weight: 900;

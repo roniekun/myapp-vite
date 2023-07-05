@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './StringCharacterMapper.css';
 
 function StringCharacterMapper() {
-  const customString = "RONIEKUN";
+  const customString = "RONIEKUN.";
 
   const characters = customString.split("");
   const [hoveredIndex, setHoveredIndex] = useState(4);
