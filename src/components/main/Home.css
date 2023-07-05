@@ -2,10 +2,17 @@
     display: flex;
     overflow-x: hidden;
     width: 100vw;
-    height: auto;
+    height: 100%;
     flex-direction: column;
     position: relative;
     padding-top: 75px;
-    
-    
+    overflow: hidden;
+    }
+
+    @media (max-width: 600px) {
+        .home__container{
+            padding-top: 60px;
+        }
+
+
     }

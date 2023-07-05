@@ -9,7 +9,7 @@ const AboutContent = () => {
 
             <h2 className='about__cta'>Hi! I'm RON</h2>
 
-           <p className='about__text description indent-75px'>A self-taught web developer with passion for creating stunning and functional websites. <br/>
+           <p className='about__text'>A self-taught web developer with passion for creating stunning and functional websites. <br/>
         
             I enjoy crafting captivating webpage, strive to create visually appealing and intuitive interfaces that engage users and convey the essence of a brand or concept.<br/>
             Driven by a desire for constant growth, I challenge myself to learn and adapt to the ever-evolving world of web development. <br/>

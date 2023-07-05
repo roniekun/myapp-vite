@@ -1,0 +1,11 @@
+.home__content__container{
+    height: 100%;
+    width:100vw;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
