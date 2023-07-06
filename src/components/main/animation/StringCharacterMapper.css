@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   height: 180px;
-  font-weight: 500;
+  font-weight: 600;
  
  
 
@@ -17,7 +17,6 @@
    transform: scale(1.5);
   font-size: 100px;
   font-weight: 900;
-  color: #151515;
   border-radius: 7px;
   z-index: 3;
   
@@ -25,39 +24,32 @@
 }
 
 .char__item {
-  margin-right: 5px;
   transition: ease-in-out .3s;
-  color: black;
- width: fit-content;
+  border-radius: 7px;
   
 
-  
 }
 
 .char__item:hover {
   transform: scale(1.5);
   font-size: 100px;
-  font-weight: 900;
-  color: #151515;
-  border-radius: 7px;
+
   z-index: 3;
 
 
 }
 
 .char__item.adjacent {
-  font-weight: 700;
+  font-weight: 800;
   transform: scale(1.3);
-  font-size: 80px;
-  color: #232323;
+  font-size: 75px;
   z-index: 2;
 }
 
 .far__adjacent {
-  font-weight: 600;
+  font-weight: 700;
   transform: scale(1.1);
   font-size: 60px;
-  color: #343434;
   z-index:3;
 
 }

@@ -16,4 +16,8 @@
 
 
     }
-  
+    @media (max-width: 600px) {
+      .portfolio__container{
+      padding-top: 60px;
+    }
+  }

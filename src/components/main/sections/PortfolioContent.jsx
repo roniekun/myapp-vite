@@ -3,13 +3,14 @@ import './PortfolioContent.css';
 
 const PortfolioContent = () => {
   return (
-    <div className='container'>
-      <section className='hero__text__container'>
-
-      <h1 className='hero__text'>Plan, Build & Deploy</h1>
-
-
-        <p className='description'>
+    <>
+      <section className='container' >
+      <div className='hero__text__container'>
+      <h1 className='hero__text'>Plan</h1>
+      <h1 className='hero__text'>Build</h1>
+      <h1 className='hero__text'>Deploy</h1>
+      </div>
+        <p className='text description'>
         We specialize in creating stunning website landing pages and portfolios that showcase your unique brand 
         and captivate your audience.<br/> 
         With our expertise in web design and content creation, 
@@ -42,7 +43,7 @@ const PortfolioContent = () => {
 
         </section>
         
-      </div>
+      </>
 
   )
 }
