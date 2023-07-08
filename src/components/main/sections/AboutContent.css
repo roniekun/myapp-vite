@@ -1,41 +1,30 @@
 .about__content__container{
     display:flex;
-    padding:10%;
+    margin: 5%;
     padding-bottom: 50px;
     font-family: 'Inter', sans-serif;
-    flex-grow: 2;
     
 }
-
-.about__cta{
-
-    font-weight:500;
-    line-height: 2;
-}
-
-.about__text{
+/* .about__text{
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 10px;
     text-align: justify;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    text-indent: 75px;
-}
+    text-indent: 50px;
+} */
 
 
 
 @media (max-width: 600px) {
 
     .about__content{
-
         display:flex;
-        margin:10px;
-        font-size: 15px;
+
 
     }
     .about__text{
-
         text-indent: 30px;
     }
 }

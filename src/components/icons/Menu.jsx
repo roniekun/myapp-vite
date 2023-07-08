@@ -22,13 +22,15 @@ const Menu = ({ showNavbar, isSmallScreen, setShowNavbar }) => {
               <Hamburger toggled={showNavbar} toggle={setShowNavbar} size={20} />
             </div>
           ) : (
+            <div className='menu__text__container'>
             <h1
             id={`component-${theme}`}
               onClick={handleClick}
               className='menu__text' 
             >
-              MENU
+              menu
             </h1>
+            </div>
           )}
         </div>
       )}

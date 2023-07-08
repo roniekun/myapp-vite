@@ -2,9 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     position: relative;
     opacity:0.9;
+    width: fit-content;
+    padding: 5px;
 
 }
 /* To hide the checkbox */
@@ -21,7 +23,7 @@
     position: relative;
     width: 50px;
     height: 30px;
-    background-color: rgb(82, 82, 82);
+    background-color:#1E1E21;
     border-radius: 20px;
     cursor: pointer;
     transition-duration: .2s;

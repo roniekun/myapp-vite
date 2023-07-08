@@ -31,7 +31,7 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
   const links = [
     { to: '/', text: 'home' },
     { to: '/about', text: 'about' },
-    { to: '/portfolio', text: 'portfolio' },
+    { to: '/portfolio', text: 'work' },
     { to: '/contact', text: 'contact' },
   ];
 

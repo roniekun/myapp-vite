@@ -14,17 +14,30 @@
     letter-spacing: 2px;
 
 }
+.menu__text__container{
 
+    background-color: #1E1E21;
+    border-radius: 3px;
+    height: 60%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    padding: 10%;
+}
 .menu__text
 {
     cursor: pointer;
     font-size: 14px;  
     position: relative;
     z-index:  9999;
-    opacity: 0.7;
+    opacity: 0.9;
     height: fit-content;
     width: auto;
-    font-weight: 500;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: white;
 }
 .menu__text:hover{
     opacity: 1;

@@ -15,6 +15,7 @@
   box-sizing: border-box;
   overflow-x: hidden;
   background-color: #F5F5F5;
+  transition:.5s;
   
 }
 /* DARKMODECONTEXT */
@@ -23,7 +24,7 @@
   background-color: #0B0E18;
   color: white;
   fill:white;
-  transition:.5s;
+ 
   .active{
     color:yellow;
   }

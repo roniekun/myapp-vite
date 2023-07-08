@@ -3,6 +3,7 @@ import { ThemeContext } from '../context/ThemeContext';
 import './Header.css';
 // import Logo from './icons/Logo';
 import Menu from './icons/Menu';
+import ToggleTheme from './buttons/ToggleTheme';
 
 
 function Header({ showNavbar, isSmallScreen, isDesktop, setShowNavbar }) {
@@ -19,6 +20,7 @@ function Header({ showNavbar, isSmallScreen, isDesktop, setShowNavbar }) {
            displayNames={false}
             />
             </div>
+
             <div>
             <Navbar
               showNavbar={showNavbar}
@@ -26,6 +28,13 @@ function Header({ showNavbar, isSmallScreen, isDesktop, setShowNavbar }) {
               isSmallScreen={isSmallScreen}
               setShowNavbar={setShowNavbar}
             />
+            </div>
+            <div>
+            {isDesktop && <ToggleTheme
+              position={'relative'}
+              height={'75px'}
+              width={'10vw'}
+            />}
             </div>
             </div>
         </>

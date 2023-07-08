@@ -1,33 +1,32 @@
 import React from 'react'
 import './AboutContent.css'
+import { ThemeContext } from '../../../context/ThemeContext';
 
 const AboutContent = () => {
+
+
   return (
-    <div className='about__content__container'>
-
-        <article>
-
-            <h2 className='about__cta'>Hi! I'm RON</h2>
-
-           <p className='about__text'>A self-taught web developer with passion for creating stunning and functional websites. <br/>
+    <ThemeContext.Consumer>
+    {({ theme }) => (
+    <div  id={`component-${theme}`} className='about__content__container'>
+       <p className='description'> A self-taught web developer with passion for creating stunning and functional websites. 
         
-            I enjoy crafting captivating webpage, strive to create visually appealing and intuitive interfaces that engage users and convey the essence of a brand or concept.<br/>
-            Driven by a desire for constant growth, I challenge myself to learn and adapt to the ever-evolving world of web development. <br/>
-            Every day, I dedicate time to refine my coding abilities and explore new techniques, ensuring that I stay at the forefront of industry trends.<br/>
-
-            As I continue to expand my expertise, my goal is to become a well-rounded full-stack developer.<br/>
-            I'm eager to explore back-end technologies, databases, and server management,<br/>
-            so I can create end-to-end solutions that provide seamless functionality and an exceptional user experience.<br/> 
-
-            I believe in the power of collaboration and actively seek opportunities to work with like-minded individuals and contribute to open-source projects.<br/>
-            Through collaboration and sharing knowledge, I aim to foster a supportive community that drives innovation and pushes the boundaries of what is possible.<br/>
-            I look forward to connecting with you and bringing your web development ideas to life.<br/>
-
-            Let's create something extraordinary together!</p> 
-
-
-        </article>
+        I enjoy crafting captivating webpage, strive to create visually appealing and intuitive interfaces that engage users and convey the essence of a brand or concept. 
+        Driven by a desire for constant growth, I challenge myself to learn and adapt to the ever-evolving world of web development.
+        Every day, I dedicate time to refine my coding abilities and explore new techniques, ensuring that I stay at the forefront of industry trends.
+      
+        As I continue to expand my expertise, my goal is to become a well-rounded full-stack developer.
+        I'm eager to explore back-end technologies, databases, and server management,
+        so I can create end-to-end solutions that provide seamless functionality and an exceptional user experience.
+      
+        I believe in the power of collaboration and actively seek opportunities to work with like-minded individuals and contribute to open-source projects.
+        Through collaboration and sharing knowledge, I aim to foster a supportive community that drives innovation and pushes the boundaries of what is possible.
+        I look forward to connecting with you and bringing your web development ideas to life.
+      
+        Let's create something extraordinary together!</p>
     </div>
+      )}
+      </ThemeContext.Consumer>
   )
 }
 
