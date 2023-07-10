@@ -1,6 +1,7 @@
 .social__links__container{
     display: flex;
     flex-direction: row;
+    
 }
 .link__btn{
     border:none;
@@ -12,9 +13,28 @@
     list-style: none;
     text-decoration: none;
     color: black;
-   
+
 
     
+}
+
+.icon__container{
+
+  padding: 10px 10px 5px 10px;
+  border-radius: 50%;
+  margin: 0px;
+}
+.userHandle__container{
+  padding: 10px 0px 5px 0px;
+  margin: 0px;
+
+}
+
+.icon__container:hover{
+  background-color: rgba(10, 102, 194, 0.2);
+
+ 
+
 }
 .social__icon svg {
     width: 17px;
@@ -22,29 +42,16 @@
     opacity: 1;
     transition: .5s;
     padding-bottom: 3px;
+    margin: 0;
 
   }
 
   .social__icon svg:hover {
     scale: 1.01;
     transform: translateY(-5%);
+
   } 
-  .social__icon svg:hover:nth-child(1) {
-    fill:#0A66C2;
-  
-  }
-  .social__icon svg:hover:nth-child(2) {
-    fill:#181717;
-  
-  }
-  .social__icon svg:hover:nth-child(3) {
-    fill:#1877F2;
-  
-  }
-  .social__icon svg:hover:nth-child(4) {
-    fill:#E4405F;
-  
-  }
+ 
   
   
 .link__btn:hover{
@@ -52,6 +59,7 @@
     scale: 1.01;
     transform: translateY(-5%);
     filter: brightness(125%);
+
     
 
 }

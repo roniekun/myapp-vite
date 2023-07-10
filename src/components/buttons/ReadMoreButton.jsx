@@ -8,7 +8,7 @@ const ReadMoreButton = ({ onClick, isClicked }) => {
       <button className='read__more__btn' onClick={onClick}>
         {isClicked ? (
           <>
-            Read less <DoubleArrowLeft className='icon' />
+            Show less <DoubleArrowLeft className='icon' />
           </>
         ) : (
           <>

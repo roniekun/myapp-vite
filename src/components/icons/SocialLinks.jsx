@@ -30,6 +30,7 @@ const SocialLinks = ({ isSmallScreen, isDesktop, showNavbar, fillColor, displayN
         color: fillColor, fontFamily: 'Inter', margin: "12px", fontWeight: '500'}}>Follow my accounts:</p>
         </div> }
       {socialMediaLinks.map((link) => (
+        
     <a
     id={`component-${theme}`}
     className='link__btn social__icon'
@@ -39,13 +40,14 @@ const SocialLinks = ({ isSmallScreen, isDesktop, showNavbar, fillColor, displayN
     style={{fill: fillColor,color:fillColor}}
     rel="noopener noreferrer"
   >
- 
-    <div style={{ marginRight: '7px' }}> 
+    <>
+    <div className='icon__container'> 
     {link.icon}
     </div>
-    <div style={{fontSize: '11px'}}>
-      {displayNames && <span>{link.userhandle}</span>}
+    <div className='userHandle__container' style={{fontSize: '11px'}}>
+      {displayNames && link.userhandle}
       </div>
+      </>
 
   </a>
         ))}</div>

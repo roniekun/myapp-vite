@@ -45,7 +45,7 @@
   #checkboxInput:checked+.toggleSwitch::after {
     transform: translateX(100%);
     transition-duration: .2s;
-    background-color:white;
+    background-color: #EEEEEA;
     border: 5px solid white;
   }
   /* Switch background change */

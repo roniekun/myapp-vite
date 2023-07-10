@@ -14,9 +14,19 @@
   height: auto;
   box-sizing: border-box;
   overflow-x: hidden;
-  background-color: #F5F5F5;
+  background-color: #EEEEEA;
   transition:.5s;
   
+}
+.description{
+        
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  text-align: justify;
+  margin-bottom: 2em;
+
+
 }
 /* DARKMODECONTEXT */
 /* Global */
@@ -30,9 +40,20 @@
   }
 }
 
+@media (max-width: 600px) {
+
+.description{
+        
+  font-size: 14px;
+  line-height: 2;
+  margin-bottom: 10px;
+  text-align: justify;
+  margin-bottom: 2em;
+ 
 
 
-
+}
+}
 
 
 

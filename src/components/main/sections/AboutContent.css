@@ -1,21 +1,26 @@
 .about__content__container{
     display:flex;
-    margin: 10%;
+    margin: 7%;
     font-family: 'Inter', sans-serif;
-
-    
-    
+   
+}
+.about__first__section{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
-
 .about__text__container{
+    
     font-size: 24px;
      display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 7;
+    -webkit-line-clamp: 12;
     overflow: hidden;
     width: 50%;
     text-indent: 40px;
+    
 
 
 }
@@ -26,6 +31,7 @@
     font-size: 24px;
     width: 50%;
      text-indent: 40px;
+     flex-direction: column;
 
 }
 
@@ -33,7 +39,6 @@
 
 @media (max-width: 600px) {
     .about__text__container{
-        font-size: 24px;
          display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 7;
@@ -46,9 +51,11 @@
 
 .about__text__container__clicked{
     display: flex;
-    font-size: 24px;
+   
+    
     width: 100%;
      text-indent: 40px;
+     flex-direction: column;
 
 }
 

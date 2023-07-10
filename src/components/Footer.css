@@ -26,10 +26,16 @@
  }
  .text{
     font-size: 12px;
-    padding-right: 0px;
     color: #f6f6f6;
     font-style: normal;
  }
+
+
+ @media (max-width: 1024px) {
+    .footer__container{
+    flex-direction: column;
+  }
+}
 
 
     
