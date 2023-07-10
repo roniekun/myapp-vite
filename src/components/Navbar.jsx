@@ -68,8 +68,9 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
                       className={`navbar__link ${location.pathname === link.to ? 'active' : ''}`}
                       to={link.to}
                     >
-                      {link.text}
                       {isSmallScreen && isActive && location.pathname === link.to && <ActiveIcon />}
+                      {link.text}
+                    
                     </Link>
                   </motion.div>
                 </AnimatePresence>

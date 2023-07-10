@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ReactComponent as ArrowMoreDown } from './svg/arrowmoredown.svg';
+import { ReactComponent as Southeast } from './svg/southeast.svg';
 
 const StyledDiv = styled.div`
   .icon__active {
@@ -28,7 +28,7 @@ const ActiveIcon = () => {
   return (
     <StyledDiv>
       <div className="icon__active">
-        <ArrowMoreDown />
+        <Southeast />
       </div>
     </StyledDiv>
   );
