@@ -1,4 +1,4 @@
-.first__section{
+.portfolio__first__section{
         height:100%;
         border-bottom: #0E0F10 solid; 
         display: flex;
@@ -46,7 +46,7 @@
       
 
 }
-.second__section{ 
+.portfolio__second__section{ 
         height:100%;
         border-bottom: #0E0F10 solid; 
         display: flex;
@@ -99,7 +99,7 @@
  
 
 }
-    .second__section{
+    .portfolio__second__section{
 
         padding: 10%;
         padding-top: 10%;

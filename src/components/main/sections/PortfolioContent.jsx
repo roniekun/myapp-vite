@@ -1,5 +1,6 @@
 import React from 'react'
 import './PortfolioContent.css';
+import { ThemeContext } from '../../../context/ThemeContext';
 
 
 
@@ -8,8 +9,10 @@ const PortfolioContent = () => {
   
 
   return (
+    <ThemeContext.Consumer>
+  {({ theme }) => (
     <>
-      <section className='first__section' >
+      <section id={`component-${theme}`} className='portfolio__first__section' >
       <div className='hero__text__container'>
 
       <h1 className='hero__text'>Plan</h1>
@@ -19,13 +22,13 @@ const PortfolioContent = () => {
       </div>
     <div>
         <p className='description'> We specialize in creating stunning website landing pages and portfolios 
-  that showcase your unique brand and captivate your audience. 
-  With our expertise in web design and content creation, we help businesses
-  and individuals establish a strong online presence that leaves a lasting impression.</p>
+                that showcase your unique brand and captivate your audience. 
+                With our expertise in web design and content creation, we help businesses
+                and individuals establish a strong online presence that leaves a lasting impression.</p>
     </div>
       </section>
 
-      <section className='second__section'>
+      <section id={`component-${theme}`} className='portfolio__second__section'>
 
       <h1 className='services'>Services</h1>
 
@@ -45,6 +48,8 @@ const PortfolioContent = () => {
         </section>
         
       </>
+        )}
+        </ThemeContext.Consumer>
 
   )
 }

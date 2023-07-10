@@ -151,6 +151,7 @@
   .navbar__link.active {
     color: whitesmoke;
     opacity: 1;
+    filter: brightness(125%);
     
   
   }
