@@ -1,15 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './AboutContent.css'
+import ReadMoreButton from '../../buttons/ReadMoreButton';
 import { ThemeContext } from '../../../context/ThemeContext';
 
 const AboutContent = () => {
+  const [isClicked,setIsClicked]= useState(false);
+  const handleClick = () => {
+    setIsClicked(!isClicked);
+  };
 
 
   return (
     <ThemeContext.Consumer>
     {({ theme }) => (
     <div  id={`component-${theme}`} className='about__content__container'>
-       <p className='description'> A self-taught web developer with passion for creating stunning and functional websites. 
+        <section className='about__first__section'>
+
+        <div className= {isClicked ? 'about__text__container__clicked' : 'about__text__container' }>
+                       <p className='description'> A self-taught web developer with passion for creating stunning and functional websites. 
         
         I enjoy crafting captivating webpage, strive to create visually appealing and intuitive interfaces that engage users and convey the essence of a brand or concept. 
         Driven by a desire for constant growth, I challenge myself to learn and adapt to the ever-evolving world of web development.
@@ -24,6 +32,13 @@ const AboutContent = () => {
         I look forward to connecting with you and bringing your web development ideas to life.
       
         Let's create something extraordinary together!</p>
+
+
+        </div>
+        <ReadMoreButton onClick={handleClick}
+                       isClicked={isClicked}/>
+        </section>
+
     </div>
       )}
       </ThemeContext.Consumer>
