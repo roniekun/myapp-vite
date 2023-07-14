@@ -42,22 +42,30 @@ const ContactForm = () => {
 
   return (
     <div className='form__container'>
+    
+      <h1 style={{fontSize:'50px', marginTop:'50px'}}>Get in touch</h1>
       <form className='form' onSubmit={handleSubmit}>
+        <div className='first__layer' style={{ display: 'flex', justifyContent: 'space-between', width: '100%',margin: '10px'}}>
         <div >
-          {/* <label htmlFor="name">Name: <br/></label> */}
+          <label htmlFor="name">NAME: <br/></label>
           <input
-           placeholder='Name'
+            className='text__input'
+            style={{height:'50px', fontSize: '14px', padding: '10px', marginTop:'5px'}}
+            placeholder='Enter your full name'
             type="text"
             id="name"
             name="name"
             value={formData.name}
             onChange={handleChange}
+
           />
         </div>
         <div>
-          {/* <label htmlFor="email">Email: <br/></label> */}
+          <label htmlFor="email">EMAIL: <br/></label>
           <input
-           placeholder='Email'
+           className='text__input'
+           placeholder='Enter your email'
+           style={{height:'50px', fontSize: '14px', padding: '10px',marginTop:'5px'}}
             type="email"
             id="email"
             name="email"
@@ -65,20 +73,22 @@ const ContactForm = () => {
             onChange={handleChange}
           />
         </div>
+        </div>
+       
         <div>
-          {/* <label htmlFor="message"> Message: <br/> </label> */}
+          <label htmlFor="message"> MESSAGE: <br/> </label>
           <textarea
-
+            className='text__area'
             id="message"
             name="message"
             value={formData.message}
             onChange={handleChange}
-            placeholder='Message'
-            rows="5" // Adjust the number of rows as needed
-            style={{overflowY: 'scroll', resize: 'none'  }}
+            placeholder='Start typing here'
+            style={{overflowY: 'scroll', resize: 'none', height:'100px', fontSize: '14px',
+                     borderRadius: '3px',padding: '10px',marginTop:'5px'  }}
           />
         </div>
-        <button className='submit__button' type="submit" >Submit</button>
+        <button className='submit__button' type="submit" >SUBMIT</button>
       </form>
 
       {showModal && (

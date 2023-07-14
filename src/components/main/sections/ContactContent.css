@@ -1,10 +1,23 @@
 .contact__content__container{
     height:100%;
     width:100vw;
-    padding: 75px;
+    padding-top: 75px;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
  
+}
+.email{
+
+
+    font-size:45px;
+}
+@media (max-width: 600px) {
+
+.email{
+
+    font-size: 18px;
+}
+
 }

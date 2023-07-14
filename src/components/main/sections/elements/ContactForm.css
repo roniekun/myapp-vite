@@ -1,29 +1,42 @@
 .form__container{
     display: flex;
     background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
-    height:400px;
-    width: 800px;
+    height:90%;
+    width: 100%;
     border-radius: 25px;
     color:white;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 5%;
+    padding: 5%;
+
+}
+.first__layer{
+    flex-direction: row;
 }
 .form{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
+    padding:10%;
 
+}
+.text__input{
+
+    width:240px;
+}
+.text__area{
+
+    width:500px;
 }
 .submit__button{
     background-color: transparent;
-
-    border: solid .5px white;
+    margin-top:20px;
+    border: solid  white;
     color:white;
     height: 45px;
-    font-size: 20px;
+    font-size: 17px;
     width: 100px;
     padding:5px;
 
@@ -31,9 +44,23 @@
 
 @media (max-width: 600px) {
     .form__container{
- 
-        width: 400px;
-  
+        border-radius: 2px;
+        width: 100%;
+        margin:0;
+    }
+
+    .form{
+
+        padding:0;
+    
+    }
+    .first__layer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .text__area, .text__input{
+        width: 300px;
     }
 
 }

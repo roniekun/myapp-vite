@@ -22,18 +22,15 @@ function Footer({ showNavbar, isSmallScreen}) {
 
     <div id={`component-${theme}`} className={`footer__container ${showFooter ? 'footer__container' :'hidden'}`}>
 
-
     <> 
       <SocialLinks fillColor={"white"} 
       displayNames={true} 
       isSmallScreen={isSmallScreen} 
-      flexDirection={"column"}/> 
-    </>
-    <>     
-   <p id={`component-${theme}`}  className='text'>© 2023. All rights reserved. This site is a work in progress :)</p> 
+      flexDirection={"column"}/>
+
+      <p id={`component-${theme}`}  className='text'>© 2023. All rights reserved. This site is a work in progress :)</p>  
     </>
 
- 
 </div>
 
 )}
