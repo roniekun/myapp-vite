@@ -26,8 +26,14 @@ const SocialLinks = ({ isSmallScreen, isDesktop, showNavbar, fillColor, displayN
   {({ theme }) => (
   <div className='social__links__container' style={isSmallScreen ? { flexDirection: flexDirection } : {}}>
       {displayNames && isSmallScreen &&
-       <div style={{justifyContent: 'center'}}><p style={{
-        color: fillColor, fontFamily: 'Inter', margin: "12px", fontWeight: '500'}}>Follow my accounts:</p>
+       <div style={{justifyContent: 'center'}}>
+        <p style={{
+              color: fillColor, 
+              fontFamily: 'Work Sans, sans-serif', 
+              margin: "12px", 
+              fontWeight: '500', 
+              fontSize: '35px'}}>
+              Follow:</p>
         </div> }
       {socialMediaLinks.map((link) => (
         
@@ -44,7 +50,7 @@ const SocialLinks = ({ isSmallScreen, isDesktop, showNavbar, fillColor, displayN
     <div className='icon__container'> 
     {link.icon}
     </div>
-    <div className='userHandle__container' style={{fontSize: '11px'}}>
+    <div className='userHandle__container'>
       {displayNames && link.userhandle}
       </div>
       </>

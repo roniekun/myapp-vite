@@ -18,6 +18,7 @@ function Header({ showNavbar, isSmallScreen, isDesktop, setShowNavbar }) {
            isSmallScreen={isSmallScreen}
            setShowNavbar={setShowNavbar}
            displayNames={false}
+           colorTheme={theme === "dark" ? 'white' : 'black'}
             />
             </div>
 

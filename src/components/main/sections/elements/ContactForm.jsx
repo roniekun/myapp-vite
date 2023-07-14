@@ -83,7 +83,7 @@ const ContactForm = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            placeholder='Start typing here'
+            placeholder='Start typing here...'
             style={{overflowY: 'scroll', resize: 'none', height:'100px', fontSize: '14px',
                      borderRadius: '3px',padding: '10px',marginTop:'5px'  }}
           />

@@ -2,13 +2,15 @@ import React from 'react';
 import './Menu.css';
 import { Turn as Hamburger } from 'hamburger-react';
 import { ThemeContext } from '../../context/ThemeContext';
+import StringCharacterMapper from  '../main/animation/StringCharacterMapper';
 
-const Menu = ({ showNavbar, isSmallScreen, setShowNavbar }) => {
+
+const Menu = ({ colorTheme, showNavbar, isSmallScreen, setShowNavbar }) => {
   const handleClick = () => {
     setShowNavbar(!showNavbar);
     console.log("clicking");
   };
-
+  const customString = 'menu';
   return (
     <ThemeContext.Consumer>
       {theme => (
@@ -23,13 +25,12 @@ const Menu = ({ showNavbar, isSmallScreen, setShowNavbar }) => {
             </div>
           ) : (
             <div className='menu__text__container'>
-            <h1
-            id={`component-${theme}`}
+              <StringCharacterMapper
               onClick={handleClick}
-              className='menu__text' 
-            >
-              menu
-            </h1>
+              colorTheme={theme === "dark" ? 'white' : 'black'}
+              customString={customString}
+            />
+
             </div>
           )}
         </div>

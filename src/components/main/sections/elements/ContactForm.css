@@ -9,6 +9,7 @@
     align-items: center;
     flex-direction: column;
     padding: 5%;
+    font-family: 'Work Sans', sans-serif;
 
 }
 .first__layer{
@@ -20,25 +21,32 @@
     flex-direction: column;
     align-items: center;
     padding:10%;
+    color:#C6CDD2;
+    font-family: 'Work Sans', sans-serif;
 
 }
 .text__input{
 
     width:240px;
+    font-family: 'Work Sans', sans-serif;
 }
 .text__area{
 
     width:500px;
+    font-family: 'Work Sans', sans-serif;
 }
 .submit__button{
-    background-color: transparent;
+    background-color: black;
     margin-top:20px;
-    border: solid  white;
+    border: 1px solid rgba(11,15,25,.1);
     color:white;
-    height: 45px;
+    border-radius: 6px;
+    height: 60px;
     font-size: 17px;
-    width: 100px;
+    width: 200px;
     padding:5px;
+    font-family: Poppins,sans-serif;
+    transition: all .3s;
 
 }
 
@@ -60,6 +68,9 @@
         align-items: center;
     }
     .text__area, .text__input{
+        width: 300px;
+    }
+    .submit__button{
         width: 300px;
     }
 

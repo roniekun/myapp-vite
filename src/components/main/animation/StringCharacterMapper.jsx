@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './StringCharacterMapper.css';
 import { ThemeContext } from '../../../context/ThemeContext';
 
-function StringCharacterMapper({color}) {
+function StringCharacterMapper({colorTheme,customString,onClick}) {
 
 
   const [hoveredIndex, setHoveredIndex] = useState();
@@ -29,7 +29,8 @@ function StringCharacterMapper({color}) {
               ${leftAdjacent ? 'far__adjacent' : ''}`}
               onMouseEnter={() => handleHover(index)}
               onMouseLeave={() => handleHover(null)}
-              style={{color:color}}
+              onClick={onClick}
+              color={colorTheme}
             >
               { char}
             </span>

@@ -24,10 +24,11 @@
     max-width: fit-content;
  
  }
- .text{
-    font-size: 12px;
+ .footer__text{
+    font-size: 14px;
     color: #f6f6f6;
     font-style: normal;
+    text-align: center;
  }
 
 
@@ -54,16 +55,12 @@
         align-items: center;
     }
 
-    .text{
-        font-size: 11px;
+    .footer__text{
+        font-size: 14px;
         color: #f6f6f6;
         text-justify: center;
-        padding-left: 0;
-        padding-right: 0;
+        font-family: 'Poppins', sans-serif;
         font-style: normal;
-
-
-       
      
     }
 

@@ -13,8 +13,6 @@
     list-style: none;
     text-decoration: none;
     color: black;
-
-
     
 }
 
@@ -27,6 +25,9 @@
 .userHandle__container{
   padding: 10px 0px 5px 0px;
   margin: 0px;
+  font-size: 14px;
+  font-family: 'Work Sans', sans-serif;
+ 
 
 }
 
@@ -37,8 +38,8 @@
 
 }
 .social__icon svg {
-    width: 17px;
-    height: 17px;
+    width: 20px;
+    height: 20px;
     opacity: 1;
     transition: .5s;
     padding-bottom: 3px;
