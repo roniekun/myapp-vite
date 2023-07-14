@@ -30,11 +30,10 @@ const AboutContent = () => {
                         <p className='description'>
                         I believe in the power of collaboration and actively seek opportunities to work with like-minded individuals and contribute to open-source projects.
                         Through collaboration and sharing knowledge, I aim to foster a supportive community that drives innovation and pushes the boundaries of what is possible.
-                        I look forward to connecting with you and bringing your web development ideas to life.
-                        </p>
-                      <p className='description'>
+                        I look forward to connecting with you and bringing your web development ideas to life.<br/>
                         Let's create something extraordinary together!
                         </p>
+         
 
 
         </div>

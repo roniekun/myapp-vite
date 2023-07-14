@@ -1,11 +1,15 @@
 import React from 'react'
 import './Contact.css'
 import Footer from '../Footer'
+import ContactContent from './sections/ContactContent'
 function Contact({isSmallScreen}) {
   
   return (
-    <><div className='contact__container'></div>
+    <><div className='contact__container'>
+      <ContactContent/>
       <Footer isSmallScreen={isSmallScreen}/>
+    </div>
+
     
     </>
     

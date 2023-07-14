@@ -1,18 +1,17 @@
 .read__more__btn{
     
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     width: fit-content;
     padding: 1em;
     height: 50px;
     background-color: transparent;
-    border-radius: 25px;
+    border: none;
     font-size: 15px;
     cursor: pointer;
     text-transform: capitalize;
-    background-color: #0E0F10;
-    color: white;
+    background-color: transparent;
     margin-top:10px;
 
 }
@@ -20,11 +19,11 @@
 
     opacity: 1;
     scale: .99;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1); */
+    text-decoration: underline;
 }
 .icon{
 
-    fill:white;
     height:18px;
     width: 18px;;
 }
