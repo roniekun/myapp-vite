@@ -16,6 +16,16 @@
     
   
   }
+  .link__wrapper {
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+    justify-content: space-evenly;
+
+  }
 
   .navbar__hidden{
     transform: translateY(-110%);
@@ -37,6 +47,7 @@
 
   .links__container{
     display: flex;
+
   }
   
   .navbar__link {
@@ -58,7 +69,8 @@
   
   .navbar__link:hover {
     opacity: 1;
-    scale: 1.1;
+    font-weight: 600;
+    color:#1D2834;
   }
   
   .navbar__link.active {
@@ -130,6 +142,10 @@
       flex-direction: column;
       opacity: 1;
       justify-content: space-evenly;
+      width: 100%;
+      height: 50px;
+    
+
   
     }
   
@@ -137,7 +153,7 @@
       display: flex;
       color: white;
       font-size: 24px;
-      text-transform: lowercase;
+      text-transform: capitalize;
       opacity: 1;
       text-decoration: none;
       justify-content: space-evenly;

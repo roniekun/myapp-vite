@@ -12,28 +12,47 @@
     font-family: 'Work Sans', sans-serif;
 
 }
+.form__heading{
+
+    margin-bottom: 50px;
+    font-size: 50px;
+}
 .first__layer{
+    display: flex;
+    justify-content: space-between;
     flex-direction: row;
+    width: 100%;
 }
 .form{
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-    padding:10%;
     color:#C6CDD2;
     font-family: 'Work Sans', sans-serif;
+
+}
+.text__input, .text__area{
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+
 
 }
 .text__input{
 
     width:240px;
     font-family: 'Work Sans', sans-serif;
+    height: 45px;
+    padding: 3px;
 }
 .text__area{
-
+    padding: 3px;
     width:500px;
+    height: 90px;
     font-family: 'Work Sans', sans-serif;
+    resize: none;
+    overflow-y: scroll;
 }
 .submit__button{
     background-color: black;
@@ -59,19 +78,40 @@
 
     .form{
 
-        padding:0;
+        width: 100%;
+
     
+    }
+
+    .form__heading{
+        font-size: 35px;
+        margin-top: 20px;
+
     }
     .first__layer{
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
+        padding: 2%;
+
     }
-    .text__area, .text__input{
-        width: 300px;
+
+    .second__layer{
+        width: 100%;
+        padding: 2%;
+     
     }
+    .text__input, .text__area{
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+
+    }
+    
     .submit__button{
-        width: 300px;
+        width: 100%;
+        margin-bottom:10%;
+     
+       
     }
 
 }

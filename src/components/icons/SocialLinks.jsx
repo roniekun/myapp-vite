@@ -26,11 +26,11 @@ const SocialLinks = ({ isSmallScreen, isDesktop, showNavbar, fillColor, displayN
   {({ theme }) => (
   <div className='social__links__container' style={isSmallScreen ? { flexDirection: flexDirection } : {}}>
       {displayNames && isSmallScreen &&
-       <div style={{justifyContent: 'center'}}>
+       <div style={{ alignSelf: 'center'}}>
         <p style={{
               color: fillColor, 
               fontFamily: 'Work Sans, sans-serif', 
-              margin: "12px", 
+              marginBottom: "30px", 
               fontWeight: '500', 
               fontSize: '35px'}}>
               Follow:</p>

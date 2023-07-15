@@ -43,14 +43,13 @@ const ContactForm = () => {
   return (
     <div className='form__container'>
     
-      <h1 style={{fontSize:'50px', marginTop:'50px'}}>Get in touch</h1>
+      <h1 className='form__heading'>Get in touch</h1>
       <form className='form' onSubmit={handleSubmit}>
-        <div className='first__layer' style={{ display: 'flex', justifyContent: 'space-between', width: '100%',margin: '10px'}}>
+        <div className='first__layer'>
         <div >
           <label htmlFor="name">NAME: <br/></label>
           <input
             className='text__input'
-            style={{height:'50px', fontSize: '14px', padding: '10px', marginTop:'5px'}}
             placeholder='Enter your full name'
             type="text"
             id="name"
@@ -65,7 +64,6 @@ const ContactForm = () => {
           <input
            className='text__input'
            placeholder='Enter your email'
-           style={{height:'50px', fontSize: '14px', padding: '10px',marginTop:'5px'}}
             type="email"
             id="email"
             name="email"
@@ -75,7 +73,7 @@ const ContactForm = () => {
         </div>
         </div>
        
-        <div>
+        <div className='second__layer'>
           <label htmlFor="message"> MESSAGE: <br/> </label>
           <textarea
             className='text__area'
@@ -84,8 +82,6 @@ const ContactForm = () => {
             value={formData.message}
             onChange={handleChange}
             placeholder='Start typing here...'
-            style={{overflowY: 'scroll', resize: 'none', height:'100px', fontSize: '14px',
-                     borderRadius: '3px',padding: '10px',marginTop:'5px'  }}
           />
         </div>
         <button className='submit__button' type="submit" >SUBMIT</button>
