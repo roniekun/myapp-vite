@@ -33,14 +33,13 @@
 }
 
 .text{
-        text-indent:50px;
+       
         color: rgba(255, 255, 255, 0.7);;
 
 }
 
 .portfolio__second__section{ 
         height:100%;
-        border-bottom: #0E0F10 solid; 
         display: flex;
         flex-direction: column;
         width: 100vw;
@@ -85,11 +84,6 @@
     .description{
             font-size: 16px;
             
-    }
-    .text{
-        text-indent:40px;
- 
-
 }
     .portfolio__second__section{
 

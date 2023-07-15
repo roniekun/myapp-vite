@@ -48,19 +48,20 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
           <nav 
           className={showNavbar ? 'navbar__container' : 'navbar__hidden'}  
           id={`component-${themeContext.theme}`}>
+            <>
             <div className="links__container">
               {links.map((link, index) => (
                 <AnimatePresence mode="wait" key={link.to}>
-                  <motion.div
+                  <div
                     className="link__wrapper"
-                    key={link.to}
-                    initial="hidden"
-                    animate="visible"
-                    exit="hidden"
-                    variants={linkVariants}
-                    transition={{ delay: isSmallScreen ? index * 0.2 : 0 }}
-                    whileHover={isSmallScreen ? 'hover' : {}}
-                    whileTap="tap"
+                    // key={link.to}
+                    // initial="hidden"
+                    // animate="visible"
+                    // exit="hidden"
+                    // variants={linkVariants}
+                    // transition={{ delay: isSmallScreen ? index * 0.2 : 0 }}
+                    // whileHover={isSmallScreen ? 'hover' : {}}
+                    // whileTap="tap"
                   >
                     <Link
                       onClick={() => handleLinkClick(location.pathname === link.to)}
@@ -72,10 +73,10 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
                       {link.text}
                     
                     </Link>
-                  </motion.div>
+                  </div>
                 </AnimatePresence>
               ))}
-            </div>
+            </div></>
             <>
             <SocialLinks showNavbar={showNavbar} fillColor={isSmallScreen ? 'white' : ''} />
            {isSmallScreen &&   <ToggleTheme isSmallScreen={isSmallScreen} showNavbar={showNavbar} fontColor="white" position="relative" />}

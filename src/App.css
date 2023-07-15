@@ -39,6 +39,7 @@
  
   .active{
     color:yellow;
+    background-color: transparent;
   }
 }
 

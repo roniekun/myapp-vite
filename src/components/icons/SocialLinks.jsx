@@ -25,16 +25,7 @@ const SocialLinks = ({ isSmallScreen, isDesktop, showNavbar, fillColor, displayN
     <ThemeContext.Consumer>
   {({ theme }) => (
   <div className='social__links__container' style={isSmallScreen ? { flexDirection: flexDirection } : {}}>
-      {displayNames && isSmallScreen &&
-       <div style={{ alignSelf: 'center'}}>
-        <p style={{
-              color: fillColor, 
-              fontFamily: 'Work Sans, sans-serif', 
-              marginBottom: "30px", 
-              fontWeight: '500', 
-              fontSize: '35px'}}>
-              Follow:</p>
-        </div> }
+ 
       {socialMediaLinks.map((link) => (
         
     <a
