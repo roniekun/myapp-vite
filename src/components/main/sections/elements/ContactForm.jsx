@@ -42,7 +42,7 @@ const ContactForm = () => {
       try {
         const submissionData = {
           ...formData,
-          submissionDate: firebase.firestore.Timestamp.fromDate(new Date())
+          date: firebase.firestore.Timestamp.fromDate(new Date())
         };
         await db.collection('contact-form').add(submissionData);
         // Save the form data to Firebase
