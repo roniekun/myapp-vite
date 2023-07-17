@@ -18,11 +18,16 @@ firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 
 const ContactForm = () => {
+ 
   const initialFormData = {
     name: '',
+    firstname: '',
+    lastname: '',
     email: '',
     message: '',
   };
+
+
 
   const [formData, setFormData] = useState(initialFormData);
   const [showModal, setShowModal] = useState(false);
@@ -37,7 +42,8 @@ const ContactForm = () => {
   const handleSubmit = async e => {
     e.preventDefault();
 
-    if (formData.name && formData.email && formData.message) {
+    if (formData.firstname && formData.lastname && formData.email && formData.message) {
+      formData.name = formData.firstname + ' ' + formData.lastname;
       setIsSubmitting(true);
       try {
         const submissionData = {
@@ -74,29 +80,38 @@ const ContactForm = () => {
       <form className='form' onSubmit={handleSubmit}>
         <div className='first__layer'>
           <div>
-            <label htmlFor="name">NAME: <br/></label>
+            <label htmlFor="firstname">FIRSTNAME: <br/></label>
             <input
               className='text__input'
-              placeholder='Enter your full name'
               type="text"
-              id="name"
-              name="name"
-              value={formData.name}
+              id="firstname"
+              name="firstname"
+              value={formData.firstname}
               onChange={handleChange}
             />
           </div>
           <div>
-            <label htmlFor="email">EMAIL: <br/></label>
+            <label htmlFor="lastname">LASTNAME <br/></label>
             <input
               className='text__input'
-              placeholder='Enter your email'
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
+              id="lastname"
+              name="lastname"
+              value={formData.lastname}
               onChange={handleChange}
             />
           </div>
+        </div>
+         <div className='second__layer'>
+          <label htmlFor="message"> EMAIL: <br/> </label>
+          <input
+            className='email__input'
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder='example@gmail.com'
+          />
         </div>
         <div className='second__layer'>
           <label htmlFor="message"> MESSAGE: <br/> </label>
