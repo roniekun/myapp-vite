@@ -38,7 +38,10 @@ const SocialLinks = ({ isSmallScreen, isDesktop, showNavbar, fillColor, displayN
     rel="noopener noreferrer"
   >
     <>
-    <div className='icon__container'> 
+    <div 
+  
+    className='icon__container'> 
+
     {link.icon}
     </div>
     <div className='userHandle__container'>

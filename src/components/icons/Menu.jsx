@@ -5,7 +5,7 @@ import { ThemeContext } from '../../context/ThemeContext';
 import StringCharacterMapper from  '../main/animation/StringCharacterMapper';
 
 
-const Menu = ({ colorTheme, showNavbar, isSmallScreen, setShowNavbar }) => {
+const Menu = ({ position, showNavbar, isSmallScreen, setShowNavbar }) => {
   const handleClick = () => {
     setShowNavbar(!showNavbar);
     console.log("clicking");
@@ -14,7 +14,7 @@ const Menu = ({ colorTheme, showNavbar, isSmallScreen, setShowNavbar }) => {
   return (
     <ThemeContext.Consumer>
       {theme => (
-        <div className='menu__container'>
+        <div style={{position:position}} className='menu__container'>
           {isSmallScreen ? (
             <div
               id={`component-${theme}`}

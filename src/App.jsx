@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Header from './components/Header';
+import Navbar from './components/Navbar';
 import AutoscrollButton from './components/buttons/AutoscrollButton';
 import Home from './components/main/Home';
 import Contact from './components/main/Contact';
 import About from './components/main/About';
 import Portfolio from './components/main/Portfolio';
 import NotFound from './components/main/NotFound';
+import Menu from './components/icons/Menu';
 import './App.css';
 import { ThemeProvider, ThemeContext } from './context/ThemeContext';
 
@@ -59,6 +61,22 @@ const App = () => {
             return (
               <div className='app__container' id={`component-${theme}`}>
                 <Header
+                  showNavbar={showNavbar}
+                  isDesktop={isDesktop}
+                  isSmallScreen={isSmallScreen}
+                  setShowNavbar={setShowNavbar}
+                />
+               { isSmallScreen &&
+                <Menu
+                  showNavbar={showNavbar}
+                  isSmallScreen={isSmallScreen}
+                  setShowNavbar={setShowNavbar}
+                  displayNames={false}
+                  position= {'fixed'}
+                  colorTheme={theme === "dark" ? 'white' : 'black'}
+                 />}
+                      
+                <Navbar
                   showNavbar={showNavbar}
                   isDesktop={isDesktop}
                   isSmallScreen={isSmallScreen}

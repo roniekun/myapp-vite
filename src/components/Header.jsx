@@ -1,4 +1,3 @@
-import Navbar from './Navbar';
 import { ThemeContext } from '../context/ThemeContext';
 import './Header.css';
 // import Logo from './icons/Logo';
@@ -12,31 +11,6 @@ function Header({ showNavbar, isSmallScreen, isDesktop, setShowNavbar }) {
       {({ theme }) => (
         <>
           <div id={`component-${theme}`}  className='header__container'>
-            <div className='menu__header'>
-            <Menu
-           showNavbar={showNavbar}
-           isSmallScreen={isSmallScreen}
-           setShowNavbar={setShowNavbar}
-           displayNames={false}
-           colorTheme={theme === "dark" ? 'white' : 'black'}
-            />
-            </div>
-
-            <div>
-            <Navbar
-              showNavbar={showNavbar}
-              isDesktop={isDesktop}
-              isSmallScreen={isSmallScreen}
-              setShowNavbar={setShowNavbar}
-            />
-            </div>
-            <div>
-            {isDesktop && <ToggleTheme
-              position={'relative'}
-              height={'75px'}
-              width={'10vw'}
-            />}
-            </div>
             </div>
         </>
       )}
