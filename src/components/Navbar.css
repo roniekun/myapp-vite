@@ -121,6 +121,7 @@
       position: fixed;
       inset: 0;
       transform: translateY(0);
+      transform: translateX(0);
 
     }
     .navbar__container::before{
@@ -129,12 +130,14 @@
     }
     
     .navbar__hidden {
-      justify-content: space-evenly;
+  
+  
       transform: translateX(-100%);
       display: flex;
       flex-direction: column;
       overflow-x: hidden;
-      height: 100%;
+      justify-content: space-evenly;
+      height: 100vh;
       width: 100vw;
       background-color: #0E0F10;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -144,6 +147,7 @@
       transition: transform 0.5s cubic-bezier(.10, .10, .3, .2);
       position: fixed;
       inset: 0;
+
       
     }
     
