@@ -2,10 +2,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 import { ThemeContext } from '../context/ThemeContext';
-import ToggleTheme from './buttons/ToggleTheme';
+// import ToggleTheme from './buttons/ToggleTheme';
 import SocialLinks from './icons/SocialLinks';
 import { useState } from 'react';
-import ActiveIcon from './icons/ActiveIcon';
+// import ActiveIcon from './icons/ActiveIcon';
 
 
 const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
@@ -66,12 +66,11 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
                   >
                     <Link
                       onClick={() => handleLinkClick(location.pathname === link.to)}
-                      id={`component-${themeContext.theme}`}
-                      style={{color:showNavbar && isDesktop?'black': 'white'}}
+                      style={{color:'white'}}
                       className={`navbar__link ${location.pathname === link.to ? 'active' : ''}`}
                       to={link.to}
                     >
-                      {isSmallScreen && isActive && location.pathname === link.to && <ActiveIcon />}
+                      {/* {isSmallScreen && isActive && location.pathname === link.to && <ActiveIcon />} */}
                       {link.text}
                     
                     </Link>
@@ -83,7 +82,7 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
             {isSmallScreen &&
             <SocialLinks showNavbar={showNavbar} fillColor={'white'}  />}
             
-           {isSmallScreen &&   <ToggleTheme isSmallScreen={isSmallScreen} showNavbar={showNavbar} fontColor="white" position="relative" />}
+           {/* {isSmallScreen &&   <ToggleTheme isSmallScreen={isSmallScreen} showNavbar={showNavbar} fontColor="white" position="relative" />} */}
             </>
           </nav>
         )}

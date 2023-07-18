@@ -17,7 +17,7 @@ const App = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 600);
   const [isDesktop, setIsDesktop] = useState(window.innerWidth > 600);
-  const [showNavbar, setShowNavbar] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true);
 
   const handleResize = useCallback(() => {
     const screenWidth = window.innerWidth;
@@ -28,7 +28,8 @@ const App = () => {
 
   const handleScroll = useCallback(() => {
     const currentScroll = window.scrollY;
-    setShowNavbar(scrollPosition > currentScroll || currentScroll === 0);
+    setShowNavbar( currentScroll === 0); 
+    // scrollPosition > currentScroll ||
     // setShowNavbar(true); shows Navigation bar
     setScrollPosition(currentScroll);
   }, [scrollPosition]);
