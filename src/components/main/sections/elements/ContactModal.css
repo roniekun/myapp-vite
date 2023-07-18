@@ -1,34 +1,66 @@
-.modal{
+
+
+.success, .error{
+ 
+    animation: fadeIn 0.2s ease-in; 
+    opacity: 1;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: fit-content;
-    height: fit-content;
     position: absolute;
-    transition: .5s;
-}
-.modal__content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.success{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: green;
-    flex-direction: column;
+    justify-content: space-evenly;
+    height:140px;
+    width: fit-content;
+    padding: 2em;
+    margin: 2em;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.99);
+      
+      
     
 
-}
-.error{
 
+}
+
+.success{
+    
+    color: #1AA06D;
+}
+.error {
+    color: #df1818;
+  
+    
+               
+}
+
+.modal__btn{
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-    background-color: red;
+    border-radius: 6px;
+    width: 50px;
+    min-height: 35px;
+    margin: 1em;
+  
+  
 }
+
+.error .modal__btn{
+    border: 1px solid #df1818;
+}
+
+.success .modal__btn{
+    border: 1px solid #1AA06D;
+    background-color: #1AA06D;
+    color: white;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      scale: 0.8;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }

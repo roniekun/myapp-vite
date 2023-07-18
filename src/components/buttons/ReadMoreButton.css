@@ -13,6 +13,7 @@
     text-transform: capitalize;
     background-color: transparent;
     margin-top:10px;
+    border: 1px solid rgba(11,15,25,.1);
 
 }
 .read__more__btn:hover{

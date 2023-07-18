@@ -91,7 +91,7 @@ const ContactForm = () => {
             />
           </div>
           <div>
-            <label htmlFor="lastname">LASTNAME <br/></label>
+            <label htmlFor="lastname">LASTNAME: <br/></label>
             <input
               className='text__input'
               id="lastname"
@@ -125,7 +125,7 @@ const ContactForm = () => {
           />
         </div>
         <button className='submit__button' type="submit">
-          {isSubmiting? 'Please wait...' : 'SUBMIT' }</button>
+          {isSubmiting? 'Processing...' : 'SUBMIT' }</button>
       </form>
       {showModal && (
         <ContactModal
