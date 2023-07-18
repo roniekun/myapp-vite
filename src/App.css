@@ -36,11 +36,6 @@
   background-color: #0B0E18;
   color: white;
   fill:white;
- 
-  .active{
-    color:yellow;
-    background-color: transparent;
-  }
 }
 
 @media (max-width: 600px) {

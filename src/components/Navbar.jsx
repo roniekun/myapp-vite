@@ -66,7 +66,6 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
                   >
                     <Link
                       onClick={() => handleLinkClick(location.pathname === link.to)}
-                      style={{color:'white'}}
                       className={`navbar__link ${location.pathname === link.to ? 'active' : ''}`}
                       to={link.to}
                     >
