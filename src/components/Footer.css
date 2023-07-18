@@ -4,7 +4,7 @@
     justify-content: space-around;
     align-items: center;
     width: 100vw;
-    background-color: #0E0F10;
+    background-color: rgb(32, 32, 32);
     flex-direction: row;
     padding-top: 50px;
     padding-left: 100px;
