@@ -10,7 +10,7 @@
 }
 .email{
 
-
+    font-family: 'Lato';
     font-size:45px;
 }
 @media (max-width: 600px) {

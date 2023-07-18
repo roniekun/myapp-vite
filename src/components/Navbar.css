@@ -61,19 +61,18 @@
     font-size: 12px;
     font-weight: 500;
     opacity: 0.8;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   
   
   }
   
   .navbar__link:hover {
     opacity: 1;
-    font-weight: 600;
-    color:#1D2834;
+   color: #7a7b7c;;
   }
   
   .navbar__link.active {
-    color: black;
+    color: #0280B9;
     opacity: 1;
     font-weight: 700;
   
