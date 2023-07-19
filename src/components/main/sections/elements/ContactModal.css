@@ -29,6 +29,7 @@
 }
 .error {
     color: #df1818;
+    border: 1px solid #df1818;
   
     
                
@@ -48,8 +49,9 @@
 }
 
 .error .modal__btn{
-    border: 1px solid;
-    background-color: #DC2626;
+    border: 1px solid #df1818;
+    background-color: #FFEBE8;
+    color: #df1818;
 }
 
 .success .modal__btn{

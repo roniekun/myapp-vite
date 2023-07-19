@@ -1,11 +1,12 @@
 .contact__content__container{
     height:auto;
     width:100vw;
-    padding-top: 75px;
+    padding-top: 175px;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
  
 }
 .email{
@@ -14,10 +15,14 @@
     font-size:45px;
 }
 @media (max-width: 600px) {
+ .contact__content__container{
+    padding-top: 75px;
+ }
 
 .email{
 
     font-size: 18px;
 }
+
 
 }

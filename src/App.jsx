@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
-import AutoscrollButton from './components/buttons/AutoscrollButton';
+// import AutoscrollButton from './components/buttons/AutoscrollButton';
 import Home from './components/main/Home';
 import Contact from './components/main/Contact';
 import About from './components/main/About';
@@ -91,11 +91,11 @@ const App = () => {
                   <Route path='/contact' element={<Contact isSmallScreen={isSmallScreen}  showNavbar={showNavbar} />} />
                   <Route component={NotFound} />
                 </Routes>
-                <AutoscrollButton
+                {/* <AutoscrollButton
                   isSmallScreen={isSmallScreen}
                   isDesktop={isDesktop}
                   showNavbar={showNavbar}
-                />
+                /> */}
                 {/* <Footer showNavbar={showNavbar} setShowNavbar={setShowNavbar} /> */}
               </div>
             );

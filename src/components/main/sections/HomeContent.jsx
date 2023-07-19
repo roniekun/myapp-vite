@@ -1,13 +1,14 @@
 import React from 'react'
 import './HomeContent.css';
-// import StringCharacterMapper from '../animation/StringCharacterMapper'
+import ObjectParallax from '../../../assets/Parallax/ObjectParallax';
 
 
 const HomeContent = () => {
 
   return (
     <div className='home__content__container'>
-            {/* <StringCharacterMapper/> */}
+     <ObjectParallax/>
+
     </div>
   )
 }

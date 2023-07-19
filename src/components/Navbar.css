@@ -95,20 +95,22 @@
   
   .navbar__link:hover {
     opacity: 1;
-   color: #7a7b7c;;
+    color: #7a7b7c;;
   }
   
   .navbar__link.active {
  
     opacity: 1;
     font-weight: 900;
+    color: #EA6E43;
   
   }
   
   @media (max-width: 600px) {
   
     .navbar__container {
-      animation: show 0.5s cubic-bezier(.29,.3,0,.95);
+      /* animation: show 0.5s cubic-bezier(.29,.3,0,.95) forwards; */
+      transform: 0.5s cubic-bezier(.29,.3,0,.95);
       display: flex;
       flex-direction: column;
       overflow-x: hidden;
@@ -142,7 +144,10 @@
     }
      */
     .navbar__hidden {
-      animation: hide 0.5s cubic-bezier(.29,.3,0,.95) forwards;
+
+      /* animation: hide 0.5s cubic-bezier(.29,.3,0,.95) ; */
+      transform: translateX(-100%);
+      transition: 0.5s cubic-bezier(.29,.3,0,.95) ;
       display: flex;
       flex-direction: column;
       overflow-x: hidden;
@@ -154,7 +159,6 @@
       overflow-y: hidden;
       z-index: 9999;
       padding-bottom:60px;
-      transition: transform 0.5s cubic-bezier(.29,.3,0,.95);
       position: fixed;
       inset: 0;
       border: 1px solid rgba(11,15,25,.1);
@@ -178,9 +182,6 @@
       position: relative;
       height: 50px;
       width: 100%;
-      
-      
-  
   
     }
   
@@ -197,19 +198,28 @@
       padding: 2px;
       width: 100%;
       height: 100%;
-      font-weight: 700;
+      font-weight: 600;
 
     }
     .navbar__link:hover {
       opacity: 1;
-     color: #7a7b7c;;
+     transform: scale(1.1);
+     background-color: #EA6E43;
+     color: black;
+     font-weight: 800;
     }
     
     .navbar__link.active {
-     color: #0B0F19;
+     color: #EA6E43;
       opacity: 1;
-      font-weight: 900;
+      font-weight: 700;
+      
     
+    }
+    .navbar__link:hover.active {
+
+      color: white;
+
     }
   
 
@@ -227,7 +237,7 @@
   }
   @keyframes hide {
     from {
-      transform: translateX(0);
+      transform: translateX(-0);
     }
     to {
       transform: translateX(-100%);

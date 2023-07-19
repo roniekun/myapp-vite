@@ -26,10 +26,10 @@ function Footer({ showNavbar, isSmallScreen}) {
         <p style={{
               color: 'white',
               fontFamily: 'Inter, sans-serif', 
-              marginBottom: "25px", 
+              marginBottom: "24px", 
               fontWeight: '700', 
-              fontSize: '35px'}}>
-              Follow <br/></p>
+              fontSize: '24px'}}>
+              FOLLOW <br/></p>
         </div> }
 
     <> 
