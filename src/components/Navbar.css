@@ -76,7 +76,7 @@
 
   .links__container{
     display: flex;
-    margin-right: 10%;
+    margin-right: 5%;
 
   }
   
@@ -156,7 +156,7 @@
       justify-content: space-between;
       height: 100vh;
       width: 83vw;
-      background-color: #3D3D3D;
+      background-color: #0E2E47;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
       overflow-y: hidden;
       z-index: 9999;

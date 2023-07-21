@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
 import './Footer.css'; 
 import SocialLinks from './icons/SocialLinks';
+import UsefulLinks from './main/sections/elements/UsefulLinks';
 
 
 function Footer({ showNavbar, isSmallScreen}) {
@@ -21,16 +22,20 @@ function Footer({ showNavbar, isSmallScreen}) {
   {({ theme }) => (
 
     <div id={`component-${theme}`} className={`footer__container ${showFooter ? 'footer__container' :'hidden'}`}>
-           { isSmallScreen &&
+      
+          <UsefulLinks/>
+       
+       <>
+
+       { isSmallScreen &&
        <div style={{ alignSelf: 'center'}}>
-        <p style={{
+        <h1 style={{
               color: 'white',
-              fontFamily: 'Questrial', 
+              fontFamily: 'Inter', 
               letterSpacing: '2px',
               marginBottom: "24px", 
-              fontWeight: '700', 
-              fontSize: '24px'}}>
-              FOLLOW <br/></p>
+              fontSize: '16px'}}>
+              Follow <br/></h1>
         </div> }
 
     <> 
@@ -41,6 +46,9 @@ function Footer({ showNavbar, isSmallScreen}) {
 
       <p id={`component-${theme}`}  className='footer__text'>© 2023. All rights reserved. This site is a work in progress :)</p>  
     </>
+       
+       </>
+
 
 </div>
 
