@@ -11,6 +11,8 @@ import NotFound from './components/main/NotFound';
 import Menu from './components/icons/Menu';
 import './App.css';
 import { ThemeProvider, ThemeContext } from './context/ThemeContext';
+import PageModal from './assets/PageModal'
+
 
 
 const App = () => {
@@ -61,6 +63,9 @@ const App = () => {
           {({ theme }) => {
             return (
               <div className='app__container' id={`component-${theme}`}>
+
+
+               {isSmallScreen && <PageModal showNavbar={showNavbar}/>}
                 <Header
                   showNavbar={showNavbar}
                   isDesktop={isDesktop}
@@ -83,6 +88,7 @@ const App = () => {
                   isSmallScreen={isSmallScreen}
                   setShowNavbar={setShowNavbar}
                 />
+  
 
                 <Routes>
                   <Route path='/' element={<Home isSmallScreen={isSmallScreen} showNavbar={showNavbar} />} />

@@ -98,6 +98,8 @@
   .navbar__link:hover {
     opacity: 1;
     color: #7a7b7c;;
+    transform: translateY(-5%);
+    text-decoration: none;
   }
   
   .navbar__link.active {
@@ -131,6 +133,7 @@
       transform: translateX(0);
       border: 1px solid rgba(11,15,25,.1);
       transition-delay: .2s;
+      overflow: hidden;
    
     }
 
@@ -210,12 +213,14 @@
      background-color: #EA6E43;
      color: black;
      font-weight: bold;
+     border-radius: 2px;
     }
     
     .navbar__link.active {
      color: #EA6E43;
       opacity: 1;
       font-weight: 700;
+     
       
     
     }

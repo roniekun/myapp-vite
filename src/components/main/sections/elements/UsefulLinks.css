@@ -51,4 +51,10 @@ a:hover{
 
 
     }
+
+    .link{
+
+        padding-block: 3px;
+        font-size: 11px;
+    }
 }

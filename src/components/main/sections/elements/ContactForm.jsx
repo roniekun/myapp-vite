@@ -125,7 +125,7 @@ const ContactForm = () => {
           />
         </div>
         <button className='submit__button' type="submit">
-          {isSubmiting? 'Processing...' : 'SUBMIT' }</button>
+          {isSubmiting? 'Kindly wait' : 'SUBMIT' }</button>
       </form>
       {showModal && (
         <ContactModal
