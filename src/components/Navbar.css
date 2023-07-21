@@ -12,7 +12,7 @@
     position: fixed;
     height: 75px;
     z-index: 8888;
-    background-color: rgb(32, 32, 32); /* 10% transparent white (#fff) */
+    background:transparent; /* 10% transparent white (#fff) */
     backdrop-filter: blur(100px); /* Adjust the blur radius as needed */
     transition: .2s;   
     transform: translateY(15%);
@@ -22,11 +22,12 @@
   .navbar__container::before{
     content: '';
     width: 100%;
-    background-color: rgb(32, 32, 32); /* 10% transparent white (#fff) */
+    background-image: linear-gradient(147deg, #2c3e50  49%, #000000 100%);
     position: absolute;
-    transform: translateY(-100%);
-    height: 50%;
+    transform: translateY(-20%);
+    height: 200%;
     transition-duration: .5s;
+    z-index: -1;
 
 
 
@@ -84,8 +85,8 @@
     letter-spacing: 2px;
     display: flex;
     color: white;
-    text-transform:uppercase;
-    font-size: 12px;
+    text-transform: uppercase;
+    font-size: 14px;
     font-weight: 500;
     opacity: 0.8;
     font-family: 'Montserrat', sans-serif;
@@ -101,7 +102,7 @@
   .navbar__link.active {
  
     opacity: 1;
-    font-weight: 900;
+
     color: #EA6E43;
   
   }
@@ -117,7 +118,7 @@
       justify-content: space-between;
       height: 100vh;
       width: 83vw;
-      background-color: #3D3D3D;
+      background-color: #0E2E47;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
       overflow-y: hidden;
       z-index: 9999;
@@ -167,7 +168,7 @@
     }
     
     .links__container{
-      padding-top: 75px;
+      padding-top: 30%;
       position: relative;
       display: flex;
       flex-direction: column;
@@ -186,13 +187,14 @@
     }
   
     .navbar__link {
+      font-family: 'Questrial', sans-serif;
       display: flex;
       color: white;
-      font-size: 24px;
-      text-transform: capitalize;
+      font-size: 20px;
+      text-transform: uppercase;
       opacity: 1;
       align-items: center;
-      justify-content: flex-start;
+      justify-content: center;
       text-decoration: none;
       margin: 2px;
       padding: 2px;
@@ -206,7 +208,7 @@
      transform: scale(1.1);
      background-color: #EA6E43;
      color: black;
-     font-weight: 800;
+     font-weight: bold;
     }
     
     .navbar__link.active {
