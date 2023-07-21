@@ -16,6 +16,7 @@
 
     margin-bottom: 50px;
     font-size: 50px;
+    color: #FFB600;
    
 }
 .first__layer{
@@ -66,15 +67,17 @@
     background-color: black;
     margin-top:20px;
     border: 1px solid rgba(11,15,25,.1);
-    color:white;
+    color:#f5f5f5;
     border-radius: 6px;
     height: 60px;
     font-size: 17px;
     width: 200px;
     padding:5px;
+    font-weight: 500;
     font-family: 'Montserrat';
     transition: all .3s;
     cursor: pointer;
+    letter-spacing: 2px;
 
 }
 

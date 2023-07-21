@@ -25,7 +25,8 @@ function Footer({ showNavbar, isSmallScreen}) {
        <div style={{ alignSelf: 'center'}}>
         <p style={{
               color: 'white',
-              fontFamily: 'Inter, sans-serif', 
+              fontFamily: 'Questrial', 
+              letterSpacing: '2px',
               marginBottom: "24px", 
               fontWeight: '700', 
               fontSize: '24px'}}>
