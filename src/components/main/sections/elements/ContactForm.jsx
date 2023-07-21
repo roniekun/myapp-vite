@@ -43,34 +43,7 @@ const ContactForm = () => {
 
     setFormData( { ...formData, [e.target.name]: e.target.value });
 
-    switch (true) {
-      case formData.firstname === '':
-        console.log('Warning: Please enter a value!');
-      
-        break;
-      case formData.lastname === '':
-        console.log('Warning: Please enter a value!');
-      
-        break;
-      case formData.email === '':
-        console.log('Warning: Please enter a value!');
-      
-        break;
-      case formData.message === '':
-        console.log('Warning: Please enter a value!');
-      
-        break;
-      default:
-        setFirstname(true);
-        setLastname(true);
-        setEmail(true);
-        setMessage(true);
-        break;
-    }
-  };
-
-
- 
+  }
 
   const handleSubmit = async e => {
     e.preventDefault();
@@ -171,7 +144,7 @@ const ContactForm = () => {
         </div>
         <button className={`submit__button ${isSubmitting ? 'loading' : ''}`} 
                   type="submit">
-          {isSubmitting? 'Procecessing' : 'Deliver Message' }</button>
+          {isSubmitting? 'Processing' : 'Deliver Message' }</button>
       </form>
       {showModal && (
         <ContactModal
