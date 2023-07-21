@@ -32,18 +32,17 @@ const ContactForm = () => {
   const [modalMessage, setModalMessage] = useState('');
   const [isSuccess, setIsSuccess] = useState(true);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isClassName, setClassName] = useState('');
-  const [isSetFirstname, setFirstname] = useState(false);
-  const [isSetLastname, setLastname] = useState(false);
-  const [isSetEmail, setEmail] = useState(false);
-  const [isSetMessage, setMessage] = useState(false);
-
 
   const handleChange = e => {
 
-    setFormData( { ...formData, [e.target.name]: e.target.value });
+    e.preventDefault();
+    const { name, value } = e.target;
+  
+    // Update the formData state with the new value
+    setFormData({ ...formData, [name]: value });
 
-  }
+  };
+  
 
   const handleSubmit = async e => {
     e.preventDefault();
@@ -96,11 +95,10 @@ const ContactForm = () => {
           <div>
             <label htmlFor="firstname" style={{color:'#56595D'}}>Firstname: <br/></label>
             <input
-              className={`text__input ${isSetFirstname && isSuccess ? '' : isClassName}`}
+              className='text__input'
               type="text"
               id="firstname"
               name="firstname"
-              placeholder='Elon'
               value={formData.firstname}
               onChange={handleChange}
             />
@@ -109,8 +107,8 @@ const ContactForm = () => {
           <div>
             <label htmlFor="lastname" style={{color:'#56595D'}}>LastName: <br/></label>
             <input
-              className={`text__input ${isSetLastname && isSuccess ? '' : isClassName}`}
-              placeholder='Zuckerberg'
+              className={'text__input'}
+     
               id="lastname"
               name="lastname"
               value={formData.lastname}
@@ -121,7 +119,7 @@ const ContactForm = () => {
          <div className='second__layer'>
           <label htmlFor="email"  style={{color:'#56595D'}}> Email: <br/> </label>
           <input
-            className={`email__input ${isSetEmail && isSuccess ? '' : isClassName}`}
+            className='email__input'
             type="email"
             id="email"
             name="email"
@@ -133,8 +131,7 @@ const ContactForm = () => {
         <div className='second__layer'>
           <label htmlFor="message" style={{color:'#56595D'}}> Message: <br/> </label>
           <textarea
-            className={`text__area ${isSetMessage && isSuccess ? '' : isClassName}`}
-
+            className='text__area'
             id="message"
             name="message"
             value={formData.message}
