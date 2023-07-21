@@ -12,6 +12,7 @@ import Menu from './components/icons/Menu';
 import './App.css';
 import { ThemeProvider, ThemeContext } from './context/ThemeContext';
 import PageModal from './assets/PageModal'
+// import SiteLogo from './assets/SiteLogo';
 
 
 
@@ -63,7 +64,6 @@ const App = () => {
           {({ theme }) => {
             return (
               <div className='app__container' id={`component-${theme}`}>
-
 
                {isSmallScreen && <PageModal showNavbar={showNavbar}/>}
                 <Header

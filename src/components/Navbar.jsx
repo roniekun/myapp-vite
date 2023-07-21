@@ -6,6 +6,7 @@ import { ThemeContext } from '../context/ThemeContext';
 import SocialLinks from './icons/SocialLinks';
 import { useState } from 'react';
 // import ActiveIcon from './icons/ActiveIcon';
+import SiteLogo from './SiteLogo';
 
 
 const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
@@ -49,7 +50,9 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
           <nav 
           className={showNavbar ? 'navbar__container' : 'navbar__hidden'}  
           id={`component-${themeContext.theme}`}>
+            
             <>
+            <SiteLogo/>
             <div className="links__container">
               {links.map((link, index) => (
                 <AnimatePresence mode="wait" key={link.to}>

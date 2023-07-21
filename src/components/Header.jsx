@@ -1,8 +1,7 @@
 import { ThemeContext } from '../context/ThemeContext';
 import './Header.css';
-// import Logo from './icons/Logo';
-import Menu from './icons/Menu';
-import ToggleTheme from './buttons/ToggleTheme';
+
+import SiteLogo from './SiteLogo';
 
 
 function Header({ showNavbar, isSmallScreen, isDesktop, setShowNavbar }) {
@@ -11,6 +10,7 @@ function Header({ showNavbar, isSmallScreen, isDesktop, setShowNavbar }) {
       {({ theme }) => (
         <>
           <div id={`component-${theme}`}  className='header__container'>
+          {isSmallScreen &&( <SiteLogo/>)}
             </div>
         </>
       )}

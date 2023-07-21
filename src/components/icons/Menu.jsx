@@ -22,7 +22,7 @@ const Menu = ({ position, showNavbar, isSmallScreen, setShowNavbar }) => {
               onClick={handleClick}
               style={{color:'#EA6E43'}}
             >
-              <Hamburger toggled={showNavbar} toggle={setShowNavbar} size={20} />
+              <Hamburger toggled={showNavbar} toggle={setShowNavbar} size={22} />
             </div>
           ) : (
             <div className='menu__text__container'>
