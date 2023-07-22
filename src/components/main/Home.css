@@ -5,14 +5,17 @@
     height: auto;
     flex-direction: column;
     position: relative;
-    padding-top: 75px;
     overflow: hidden;
    
     }
 
     @media (max-width: 600px) {
         .home__container{
-            padding-top: 60px;
+
+            padding:0;
+            margin: 0;
+            /* background-color: red; */
+          
         }
 
 
