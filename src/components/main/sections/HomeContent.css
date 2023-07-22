@@ -2,11 +2,9 @@
     height: 100%;
     width:100vw;
     position: relative;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 110px ;
     flex-direction: column;
     /* background-color: red; */

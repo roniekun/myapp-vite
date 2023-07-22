@@ -1,0 +1,73 @@
+/* Slider Container */
+.slider {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  /* Left Arrow Container */
+  .left__arrow__container {
+    position: absolute;
+    cursor: pointer;
+    height: 100%;
+    left: 10px;
+    width: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Right Arrow Container */
+  .right__arrow__container {
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    right: 10px;
+    width: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Right Arrow */
+  .right__arrow {
+    display: flex;
+    position: relative;
+    height: fit-content;
+    font-size: 45px;
+    color: black;
+    z-index: 1;
+    cursor: pointer;
+    width: fit-content;
+  }
+  
+  /* Left Arrow */
+  .left__arrow {
+    position: relative;
+    height: fit-content;
+    font-size: 45px;
+    color: black;
+    z-index: 1;
+    cursor: pointer;
+    width: fit-content;
+  }
+  
+  /* Media Query for screen width <= 600px */
+  @media (max-width: 600px) {
+    .slider {
+      width: 100vw;
+      margin: 0;
+    }
+  
+    .left__arrow {
+      color: white;
+    }
+  
+    .right__arrow {
+      color: white;
+    }
+  }
+  
