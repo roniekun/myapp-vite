@@ -37,13 +37,16 @@ a:hover{
 
     .link__container{
       
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
         margin-bottom: 10%;
     }
 
     .links{
 
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         
     
 

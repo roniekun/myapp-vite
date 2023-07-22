@@ -56,10 +56,10 @@
     }
 
     .footer__text{
-        font-size: 12px;
+        font-size: 10px;
         color: #f6f6f6;
         text-justify: center;
-        font-family: 'Questrial', sans-serif;
+        font-family: 'Inter', sans-serif;
         font-style: normal;
      
     }

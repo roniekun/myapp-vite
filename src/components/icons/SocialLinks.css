@@ -75,4 +75,15 @@
     align-items: flex-start;
     justify-content: center;
 }
+.icon__container{
+
+  padding: 0px 0px 0px 0px;
+ 
+}
+.social__icon svg {
+  width: 16px;
+  height: 16px;
+
+
+}
 }

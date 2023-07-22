@@ -4,7 +4,7 @@ import './UsefulLinks.css';
 const UsefulLinks = () => {
   return (
     <div className='link__container' >
-      <h4 style={{ paddingBottom: '17px' }}>Useful links</h4>
+      <h4 style={{ paddingBottom: '17px' }}>Useful links:</h4>
       <ul className='links '>
         <li className='link' >
           <a href="https://github.com" target="_blank" rel="noopener noreferrer">Github</a>

@@ -43,6 +43,7 @@
     color:#606266;
     border-color: #DCDFE6;
     background-color: #FFFFFF;
+    font-size: 12px;
 }
 .email__input{
 
@@ -77,13 +78,13 @@
     color:#f5f5f5;
     border-radius: 4px;
     height: 50px;
-    font-size: 14px;
     width: 80%;
     padding:5px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 700;
     transition: all .3s;
     cursor: pointer;
-    letter-spacing: .1em;
+    letter-spacing: 1px;
     line-height: 1;
     background-color: #202020;;
 

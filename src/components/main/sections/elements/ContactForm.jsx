@@ -93,7 +93,13 @@ const ContactForm = () => {
 
         <div className='first__layer'>
           <div>
-            <label htmlFor="firstname" style={{color:'#56595D'}}>Firstname: <br/></label>
+            <label htmlFor="firstname" 
+            style={{color: '#687076',
+            fontWeight:'bold',
+            fontSize: '14px',
+             marginLeft: '5px'}}>
+              Firstname <br/>
+              </label>
             <input
               className='text__input'
               type="text"
@@ -101,11 +107,18 @@ const ContactForm = () => {
               name="firstname"
               value={formData.firstname}
               onChange={handleChange}
+              required
             />
           </div>
 
           <div>
-            <label htmlFor="lastname" style={{color:'#56595D'}}>LastName: <br/></label>
+            <label htmlFor="lastname" 
+            style={{color: '#687076',
+             fontWeight:'bold',fontSize: '14px', 
+             marginLeft: '5px'}}>
+
+              Lastname <br/>
+              </label>
             <input
               className={'text__input'}
      
@@ -113,11 +126,17 @@ const ContactForm = () => {
               name="lastname"
               value={formData.lastname}
               onChange={handleChange}
+              required
             />
           </div>
         </div>
          <div className='second__layer'>
-          <label htmlFor="email"  style={{color:'#56595D'}}> Email: <br/> </label>
+          <label htmlFor="email"  
+                  style={{color: '#687076',
+                  fontWeight:'bold',
+                  fontSize: '14px',
+                  marginLeft: '5px'}}>
+                 Email <br/> </label>
           <input
             className='email__input'
             type="email"
@@ -126,10 +145,14 @@ const ContactForm = () => {
             value={formData.email}
             onChange={handleChange}
             placeholder='example@gmail.com'
+            required
           />
         </div>
         <div className='second__layer'>
-          <label htmlFor="message" style={{color:'#56595D'}}> Message: <br/> </label>
+          <label htmlFor="message" 
+                  style={{ color: '#687076',fontWeight:'bold',
+                  fontSize: '14px', marginLeft: '5px'}}> 
+                  Message <br/> </label>
           <textarea
             className='text__area'
             id="message"
@@ -137,11 +160,12 @@ const ContactForm = () => {
             value={formData.message}
             onChange={handleChange}
             placeholder='Start typing here...'
+            required
           />
         </div>
         <button className={`submit__button ${isSubmitting ? 'loading' : ''}`} 
                   type="submit">
-          {isSubmitting? 'Processing' : 'Deliver Message' }</button>
+          {isSubmitting? 'Processing...' : 'Deliver Message' }</button>
       </form>
       {showModal && (
         <ContactModal

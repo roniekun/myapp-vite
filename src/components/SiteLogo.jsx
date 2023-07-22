@@ -16,7 +16,7 @@ const StyledDiv = styled.div`
     text-transform: uppercase;
     font-size:20px;
     width:fit-content;
-    height: 60px;
+    height: fit-content;
     top:0;
     color: #687076;
     
@@ -40,7 +40,9 @@ const StyledDiv = styled.div`
 
       .site__logo__container{
         position: relative;
-        margin-block: 20px;   
+        margin-block: 20px;  
+        color: white;
+        fill: white; 
 
       }
     }
