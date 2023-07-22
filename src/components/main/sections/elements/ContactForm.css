@@ -33,15 +33,16 @@
     align-items: center;
     color:#C6CDD2;
     font-family: 'Inter', sans-serif;
+    
 
 }
 .text__input, .text__area, .email__input{
+    border: solid 1px #DCDFE6;;
     width: 100%;
     margin-top: 2%;
     margin-bottom: 4%;
     border-radius: 4px;
     color:#606266;
-    border-color: #DCDFE6;
     background-color: #FFFFFF;
     font-size: 12px;
 }
@@ -51,6 +52,7 @@
     width:500px;
     height: 40px;
     font-family: 'Inter', sans-serif;
+    
 
 }
 

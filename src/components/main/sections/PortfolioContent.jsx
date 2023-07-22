@@ -15,7 +15,7 @@ const PortfolioContent = () => {
       <section id={`component-${theme}`} className='portfolio__first__section' >
       <div className='hero__text__container'>
 
-      <h1 className='hero__text'>Plan</h1>
+      <h1 className='hero__text'>Design</h1>
       <h1 className='hero__text'>Build</h1>
       <h1 className='hero__text'>Deploy</h1>
     
