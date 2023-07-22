@@ -20,7 +20,7 @@ const Menu = ({ position, showNavbar, isSmallScreen, setShowNavbar }) => {
               id={`component-${theme}`}
               className='menu__btn'
               onClick={handleClick}
-              style={{color:'white'}}
+              style={{color:'black'}}
             >
               <Hamburger toggled={showNavbar} toggle={setShowNavbar} size={20} />
             </div>

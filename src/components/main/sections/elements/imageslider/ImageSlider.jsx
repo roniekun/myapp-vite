@@ -21,13 +21,7 @@ const ImageSlider = () => {
     setCurrentIndex(slideIndex);
   };
 
-  const slideStylesWidthBackground = {
-    width: "100vh",
-    height: "100vh",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundImage: `url(${slides[currentIndex].url})`,
-  };
+
 
   const goToNextSlide = () => {
     const isLastSlide = currentIndex === slides.length - 1;
@@ -59,8 +53,17 @@ const ImageSlider = () => {
         &#8250;
         </div>
       </div>
-
-      <div style={slideStylesWidthBackground}></div>
+      {slides.map((slide, index) => (
+        <div
+          key={index}
+          className="slide"
+          style={{
+            backgroundImage: `url(${slide.url})`,
+            display: index === currentIndex ? "block" : "none",
+ 
+          }}
+        ></div>
+      ))}
     </div>
   );
 };

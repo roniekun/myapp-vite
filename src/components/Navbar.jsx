@@ -2,11 +2,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 import { ThemeContext } from '../context/ThemeContext';
-// import ToggleTheme from './buttons/ToggleTheme';
 import SocialLinks from './icons/SocialLinks';
 import { useState } from 'react';
-// import ActiveIcon from './icons/ActiveIcon';
-import SiteLogo from './SiteLogo';
+// import SiteLogo from './SiteLogo';
 
 
 const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
@@ -52,7 +50,7 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
           id={`component-${themeContext.theme}`}>
             
             <>
-            <SiteLogo Left={'0'}/>
+            {/* <SiteLogo Left={'0'}/> */}
             <div className="links__container">
               {links.map((link, index) => (
                 <AnimatePresence mode="wait" key={link.to}>
