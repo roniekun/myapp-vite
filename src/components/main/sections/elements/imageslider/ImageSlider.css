@@ -17,64 +17,78 @@
   
   /* Left Arrow Container */
   .left__arrow__container {
+
     position: absolute;
     cursor: pointer;
-    height: 100%;
+    height: 50px;
+    top: 50%;
     left: 10px;
-    width: 2%;
+    width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(228, 226, 224, 0.3);
+    
   }
   
   /* Right Arrow Container */
   .right__arrow__container {
+    
     cursor: pointer;
     position: absolute;
-    height: 100%;
+    height: 50px;
+    top:50%;
     right: 10px;
-    width: 2%;
+    width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(228, 226, 224, 0.3);
   }
   
   /* Right Arrow */
   .right__arrow {
     display: flex;
-    position: relative;
-    height: fit-content;
-    font-size: 45px;
-    color: black;
+    font-size: 50px;
+    color: white;
     z-index: 1;
     cursor: pointer;
-    width: fit-content;
+  
   }
   
   /* Left Arrow */
   .left__arrow {
-    position: relative;
-    height: fit-content;
-    font-size: 45px;
-    color: black;
+    font-size: 50px;
+    color: white;
     z-index: 1;
     cursor: pointer;
-    width: fit-content;
+
   }
   
   /* Media Query for screen width <= 600px */
   @media (max-width: 600px) {
     .slider {
-      width: 100vw;
+      width: 90vw;
+      height: 200px;
       margin: 0;
+    }
+    .slide{
+      background-size: contain;
+      background-repeat: no-repeat;
     }
   
     .left__arrow {
-      color: white;
+      color: black;
     }
   
     .right__arrow {
-      color: white;
+      color: black;
+    }
+    .left__arrow__container{
+      background-color: rgba(228, 226, 224, 0.3);
+    }
+    .right__arrow__container{
+      background-color: rgba(228, 226, 224, 0.3);
     }
   }
   

@@ -1,32 +1,13 @@
-import { motion, AnimatePresence } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 import { ThemeContext } from '../context/ThemeContext';
 import SocialLinks from './icons/SocialLinks';
 import { useState } from 'react';
-// import SiteLogo from './SiteLogo';
 
 
 const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
   const location = useLocation();
   const [isActive, setIsActive] = useState(true);
-
-  const linkVariants = {
-    hidden: isSmallScreen
-      ? { y: 20, opacity: 0, transition: { duration: 0.5, ease: 'linear' } }
-      : { x: -20, opacity: 0, transition: { duration: 0.5, ease: 'linear' } },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.5, ease: 'linear' },
-    },
-    hover: {
-      scale: 1.1,
-    },
-    tap: {
-      scale: 0.8,
-    },
-  };
 
   const links = [
     { to: '/', text: 'home' },
@@ -41,6 +22,8 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
     console.log('Link clicked and active');
   };
 
+  
+
   return (
     <>
       <ThemeContext.Consumer>
@@ -53,29 +36,19 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
             {/* <SiteLogo Left={'0'}/> */}
             <div className="links__container">
               {links.map((link, index) => (
-                <AnimatePresence mode="wait" key={link.to}>
-                  <div
-                    className="link__wrapper"
-                    // key={link.to}
-                    // initial="hidden"
-                    // animate="visible"
-                    // exit="hidden"
-                    // variants={linkVariants}
-                    // transition={{ delay: isSmallScreen ? index * 0.2 : 0 }}
-                    // whileHover={isSmallScreen ? 'hover' : {}}
-                    // whileTap="tap"
+                <div
+                  className="link__wrapper"
+                  key={link.to}
+                >
+                  <Link
+                    onClick={() => handleLinkClick(location.pathname === link.to)}
+                    className={`navbar__link ${location.pathname === link.to ? 'active' : ''}`}
+                    to={link.to}
                   >
-                    <Link
-                      onClick={() => handleLinkClick(location.pathname === link.to)}
-                      className={`navbar__link ${location.pathname === link.to ? 'active' : ''}`}
-                      to={link.to}
-                    >
-                      {/* {isSmallScreen && isActive && location.pathname === link.to && <ActiveIcon />} */}
-                      {link.text}
-                    
-                    </Link>
-                  </div>
-                </AnimatePresence>
+                    {/* {isSmallScreen && isActive && location.pathname === link.to && <ActiveIcon />} */}
+                    {link.text}
+                  </Link>
+                </div>
               ))}
             </div></>
             <>

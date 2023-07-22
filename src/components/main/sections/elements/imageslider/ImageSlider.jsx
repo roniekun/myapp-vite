@@ -31,7 +31,7 @@ const ImageSlider = () => {
 
   // useEffect to automatically transition to the next slide after 5 seconds (5000ms)
   useEffect(() => {
-    const intervalId = setInterval(goToNextSlide, 5000); // 5000ms = 5 seconds
+    const intervalId = setInterval(goToNextSlide, 4000); // 5000ms = 5 seconds
 
     // Clean up the interval when the component is unmounted or currentIndex changes
     return () => clearInterval(intervalId);
@@ -59,7 +59,7 @@ const ImageSlider = () => {
           className="slide"
           style={{
             backgroundImage: `url(${slide.url})`,
-            display: index === currentIndex ? "block" : "none",
+            display: index === currentIndex ? "flex" : "none",
  
           }}
         ></div>
