@@ -22,6 +22,8 @@ const PageModal = ({ showNavbar }) => {
   return isVisible ? (
     <div
       style={{
+        position:'fixed',
+        top: '0',
         width: '100vh',
         height: '100vh',
         background: '#0B0F19',

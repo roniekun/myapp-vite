@@ -72,6 +72,7 @@ const App = () => {
                   isSmallScreen={isSmallScreen}
                   setShowNavbar={setShowNavbar}
                 />
+                
                { isSmallScreen &&
                 <Menu
                   showNavbar={showNavbar}

@@ -10,7 +10,7 @@ function Header({ showNavbar, isSmallScreen, isDesktop, setShowNavbar }) {
       {({ theme }) => (
         <>
           <div id={`component-${theme}`}  className='header__container'>
-          {isSmallScreen &&( <SiteLogo/>)}
+          {/* {isSmallScreen &&( <SiteLogo/>)} */}
             </div>
         </>
       )}
