@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { slides } from './ImageSliderData'; 
 
 const slideStyles = {
@@ -6,6 +6,7 @@ const slideStyles = {
   height: "100%",
   backgroundSize: "cover",
   backgroundPosition: "center",
+ 
 };
 
 const rightArrowStyles = {
@@ -47,13 +48,8 @@ const dotsContainerStyles = {
 
 };
 
-const dotStyle = {
-  margin: "0 3px",
-  cursor: "pointer",
-  fontSize: "20px",
-};
-
 const ImageSlider = () => {
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
@@ -68,26 +64,43 @@ const ImageSlider = () => {
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
   };
+
+  
   const slideStylesWidthBackground = {
     ...slideStyles,
     backgroundImage: `url(${slides[currentIndex].url})`,
+    // transition: "background-image 0.5s ease",
   };
+
+  const goToNextSlide = () => {
+    const isLastSlide = currentIndex === slides.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
+
+  // useEffect to automatically transition to the next slide after 3 seconds
+  useEffect(() => {
+    const intervalId = setInterval(goToNextSlide, 5000); // 3000ms = 3 seconds
+
+    // Clean up the interval when the component is unmounted or currentIndex changes
+    return () => clearInterval(intervalId);
+  }, [currentIndex]);
 
   return (
     <div style={sliderStyles}>
-     <div style={dotsContainerStyles}>
+     {/* <div style={dotsContainerStyles}>
 
     
         {slides.map((slide, slideIndex) => (
           <div
-            style={dotStyle}
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}
+            style={{cursor: 'pointer', color:'white'}}
           >
             ●
           </div>
         ))}
-      </div>
+      </div> */}
  <div style={{
             position:'absolute',
             height: '100%',
