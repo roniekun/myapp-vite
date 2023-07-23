@@ -59,8 +59,8 @@ const ImageSlider = () => {
           className="slide"
           style={{
             backgroundImage: `url(${slide.url})`,
-            display: index === currentIndex ? "flex" : "none",
- 
+            display: index === currentIndex ? "block" : "none",
+        
           }}
         ></div>
       ))}
