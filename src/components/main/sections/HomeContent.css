@@ -6,56 +6,146 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+   
 }
 
-.intro{
-    padding: 7%;
+.intro, .outro{
+    padding: 10%;
     justify-content: center;
     align-items: center;
     font-family: 'Inter';
     color: #33353B;
     width: 100vw;
+    font-weight: 400;
+    position: relative;
+   
+    
   
 }
 .intro::after{
+    
     content: '';
     width: 80%;
     height: 2px;
     background-color: #E5E7EA;
+    bottom: -1px;
+    left:0;
+    right: 0;
+    margin: 0 auto;
     position: absolute;
-    bottom: 0;
-    z-index: -1;
+    z-index: 1;
 
   }
+
 .intro__heading{
-    margin-bottom: 5%;
+
     text-align: center;
     font-family: 'Lato';
     font-size: 45px;
+    font-weight: 400;
+    
    
 }
-.intro__text{
+
+.intro__heading span{
+    font-style: italic;
+    font-weight: 600;
+    
+}
+.intro__text, .outro__text{
 
     font-size: 24px;
     text-align: justify;
     line-height: 1.5em;
     text-align: center;
     color: #33353B;
-    margin-top: 10%;
+    margin: 10% 5% 10% 5%;
+  
 }
 
-span{
-    font-weight: normal;
+.intro__text span{
+   
+    font-style: italic;
+    font-size: 24px;
 }
 
+.tech{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter';
+    color: #33353B;
+    width: 100vw;
+    font-weight: 400;
+    position: relative;
+    padding:10%;
+
+}
+.tech__heading{
+
+    font-size: 45px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 5%;
+}
+.tech__lists{
+
+    display: flex;
+    flex-direction: row;
+}
+.tech__lists li{
+
+    padding: 5px;
+}
 
 
 @media (max-width: 600px) {
     .home__content__container{
         top: 0;
-        /* background-color: red; */
       
     }
 
+    .intro, .outro{
 
+        padding: 5%;
+
+    }
+   
+    .intro__heading, .outro__heading{
+            padding-top: 20%;
+            font-size: 34px;  
+    } 
+ 
+
+    .intro__text, .outro__text{
+
+        font-size: 16px;
+
+    }
+     
+    .tech{
+
+        padding: 10%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+    .tech__heading{
+
+
+        font-size: 34px;
+        margin-bottom: 5%;
+    }
+    .tech__lists{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    
 }

@@ -74,6 +74,7 @@
   .navbar__hidden::after{
 
     content: '';
+    margin: 0 auto;
     width: 80%;
     height: 2px;
     background-color: #E5E7EA;

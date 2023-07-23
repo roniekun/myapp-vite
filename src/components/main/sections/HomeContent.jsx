@@ -14,9 +14,9 @@ const HomeContent = () => {
      {/* <ObjectParallax/> */}
         <ImageSlider />
 
-
+        <div style={{backgroundColor: 'white'}}>
         <div className="intro">
-          <h1 className='intro__heading'>Hi, I'm Ron. <br/></h1>
+          <h1 className='intro__heading'>Hi, I'm <span>Ron</span>. <br/></h1>
           <p className="intro__text">
                          This is my portfolio website focuses on two things: <br/>
           </p>
@@ -35,14 +35,36 @@ const HomeContent = () => {
     
         </div>
 
-        <div className='intro'>
-          <p className='intro__text'>
-                        Stay awhile <br/> and immerse yourself in the fusion of technology and artistic expression.<br/> 
+    </div>
 
-                        Whether you're intrigued by my coding wizardry or drawn to the beauty of my visual storytelling,<br/>
+        <div className='outro'>
+          <p className='outro__text'>
+                        <span>Stay awhile </span><br/> immerse yourself in the fusion of technology and artistic expression.<br/> 
+
+                        Whether you're intrigued by my coding wizardry or drawn to the beauty of my <br/>visual storytelling,<br/>
                         I hope my work leaves you inspired and eager to embark on future collaborations.
           </p>
         </div>
+
+
+        <div className='tech'>
+          <h1 className='tech__heading'>Technology I use </h1> 
+          <>
+          <ul className='tech__lists'>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript ES7/ES8</li>
+          <li>React</li>
+          <li>Git/Github</li>
+          <li>Firebase</li>
+          <li>Sony Alpha</li>
+          <li>Adobe Ligthroom</li>
+          </ul>
+          </>
+
+          
+        </div>
+        
 
     </div>
     
