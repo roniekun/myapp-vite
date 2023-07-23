@@ -24,7 +24,7 @@ const HomeContent = () => {
                       
                         <span>Web Development </span>  <br/>
                                                        <br/>     
-                        I make website using Reactjs Framework, currently expanding my expertise in front-end development. <br/>
+                        I make website using ReactJS Framework, currently expanding my expertise in front-end development. <br/>
           </p>
             <p className="intro__text">
                          <span>Photography</span>  <br/>

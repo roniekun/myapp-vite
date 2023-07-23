@@ -8,7 +8,7 @@ const PageModal = ({ showNavbar }) => {
     if (showNavbar) {
       timer = setTimeout(() => {
         setIsVisible(true);
-      }, 300); // 500 milliseconds (half second delay)
+      }, 200); // 500 milliseconds (half second delay)
 
     }
     else{
