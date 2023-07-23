@@ -38,21 +38,16 @@ const ImageSlider = () => {
   }, [currentIndex]);
 
   return (
+   <div className="slider__container">
 
-    <div className='slider'>
-
-      <div className='left__arrow__container'
+<div className='left__arrow__container'
       >
         <div onClick={goToPrevious} className='left__arrow'>
          &#8249;
         </div>
       </div>
+    <div className='slider'>
 
-      <div className='right__arrow__container'>
-        <div onClick={goToNext} className="right__arrow">
-        &#8250;
-        </div>
-      </div>
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -60,10 +55,19 @@ const ImageSlider = () => {
           style={{
             backgroundImage: `url(${slide.url})`,
             display: index === currentIndex ? "block" : "none",
+            transform: 'translateX(0)'
         
           }}
         ></div>
       ))}
+    </div>
+
+
+    <div className='right__arrow__container'>
+        <div onClick={goToNext} className="right__arrow">
+        &#8250;
+        </div>
+      </div>
     </div>
   );
 };

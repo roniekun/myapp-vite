@@ -1,4 +1,12 @@
 /* Slider Container */
+.slider__container{
+  display: flex;
+  align-items: center;
+  width: 90vw;
+  height: 80%;
+  justify-content: center;
+  object-fit: contain;
+}
 .slider {
     display: flex;
     position: relative;
@@ -14,12 +22,25 @@
     background-size: cover;
     background-position: center;
     flex: 0 0 100%;
+    transition: transform 0.5s ease;
    
   }
+  /* .slide::after{
+
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(40%);
+    background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.1));
+
+    
+
+  } */
   .slide-visible {
     opacity: 1;
-    transition: scale .5s ease-in-out;
-    transform: scale(1.2);
+   
   }
   
   /* Class for hidden slides */
@@ -32,15 +53,16 @@
   /* Left Arrow Container */
   .left__arrow__container {
 
-    position: absolute;
+    position: relative;
     height: fit-content;
-    top: 50%;
-    left: 10px;
     width: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(228, 226, 224, 0.3);
+    /* background-color: red; */
+    transform: translateX(200%);
+    z-index: 1;
+    
     
   }
   
@@ -48,15 +70,16 @@
   .right__arrow__container {
     
     cursor: pointer;
-    position: absolute;
+    position: relative;
     height: fit-content;
-    top:50%;
-    right: 10px;
     width: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(228, 226, 224, 0.3);
+    /* background-color: red; */
+    transform: translateX(-200%);
+    z-index: 1;
+   
   }
   
   /* Right Arrow */
@@ -66,6 +89,7 @@
     color: white;
     z-index: 1;
     cursor: pointer;
+    /* background-color: rgba(228, 226, 224, 0.3); */
     
   
   }
@@ -76,6 +100,13 @@
     color: white;
     z-index: 1;
     cursor: pointer;
+    /* background-color: rgba(228, 226, 224, 0.3); */
+  }
+
+  .left__arrow:hover, .right__arrow:hover {
+
+    transform:translateY(-1%) scale(1.1);
+
   }
   
   /* Media Query for screen width <= 600px */
@@ -92,18 +123,20 @@
   
     .left__arrow {
       color: white;
-      font-size: 15px;
+      font-size: 20px;
+      background-color: transparent;
     }
   
     .right__arrow {
       color: white;
-      font-size: 15px;
+      font-size: 20px;
+      background-color: transparent;
     }
-    .left__arrow__container{
+    /* .left__arrow__container{
       background-color: rgba(228, 226, 224, 0.3);
     }
     .right__arrow__container{
       background-color: rgba(228, 226, 224, 0.3);
-    }
+    } */
   }
   
