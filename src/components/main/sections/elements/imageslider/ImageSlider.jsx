@@ -56,7 +56,7 @@ const ImageSlider = () => {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className="slide"
+          className={`slide ${index === currentIndex ? 'slide-visible' : 'slide-hidden'}`}
           style={{
             backgroundImage: `url(${slide.url})`,
             display: index === currentIndex ? "block" : "none",
