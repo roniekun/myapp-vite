@@ -1,3 +1,12 @@
+@keyframes slideRight {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+  }
+  
 .home__content__container{
     height: 100%;
     width:100vw;
@@ -10,16 +19,16 @@
 }
 
 .intro, .outro{
-    padding: 10%;
     justify-content: center;
     align-items: center;
     font-family: 'Inter';
     color: #33353B;
-    width: 100vw;
+    width: 90vw;
+    margin-block: 10%;
+    padding-block: 10%;
     font-weight: 400;
     position: relative;
-   
-    
+    /* background-color: red; */
   
 }
 .intro::after{
@@ -37,14 +46,16 @@
 
   }
 
-.intro__heading{
-
+  .intro__heading {
     text-align: center;
     font-family: 'Lato';
     font-size: 45px;
     font-weight: 400;
-    
-   
+    background-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(16, 16, 79, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    color: transparent;
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text;
+    animation: slideRight 5s linear infinite;
 }
 
 .intro__heading span{
@@ -59,7 +70,8 @@
     line-height: 1.5em;
     text-align: center;
     color: #33353B;
-    margin: 10% 5% 10% 5%;
+    padding: 10% 5% 10% 5%;
+    /* background-color: red; */
   
 }
 
