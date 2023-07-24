@@ -18,18 +18,19 @@ const HomeContent = () => {
         <div className="intro">
           <h1 className='intro__heading'>Hi, I'm <span>Ron</span>. <br/></h1>
           <p className="intro__text">
-                         This is my portfolio website focuses on two things: <br/>
+                         This is my portfolio website focuses on two things <br/>
           </p>
-          <p className='intro__text'>
+          <p className='intro__text shadow'>
                       
                         <span>Web Development </span>  <br/>
                                                        <br/>     
                         I make website using ReactJS Framework, currently expanding my expertise in front-end development. <br/>
           </p>
-            <p className="intro__text">
+            <p className="intro__text shadow">
                          <span>Photography</span>  <br/>
                                                    <br/>
-                        I find joy in the art of Photography. While I don't limit myself to a specific niche,<br/>
+                        I find joy in the art of Photography.<br/>
+                        While I don't limit myself to a specific niche,
                         my portfolio reflects a diverse array of captivating shots.
             </p>
     
@@ -38,16 +39,16 @@ const HomeContent = () => {
     </div>
 
         <div className='outro'>
-          <p className='outro__text'>
+          <p className='outro__text shadow' >
                         <span>Stay awhile </span><br/> immerse yourself in the fusion of technology and artistic expression.<br/> 
 
-                        Whether you're intrigued by my coding wizardry or drawn to the beauty of my <br/>visual storytelling,<br/>
+                        Whether you're intrigued by my coding wizardry or drawn to the beauty of visual storytelling,<br/>
                         I hope my work leaves you inspired and eager to embark on future collaborations.
           </p>
         </div>
 
 
-        <div className='tech'>
+        <div className='tech shadow'>
           <h1 className='tech__heading'>Technology I use </h1> 
           <>
           <ul className='tech__lists'>
