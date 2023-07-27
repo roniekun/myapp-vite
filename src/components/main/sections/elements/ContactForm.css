@@ -37,14 +37,23 @@
 
 }
 .text__input, .text__area, .email__input{
-    border: solid 1px #DCDFE6;;
+    border: 1px solid transparent;
     width: 100%;
     margin-top: 2%;
     margin-bottom: 4%;
     border-radius: 4px;
     color:#606266;
-    background-color: #FFFFFF;
+    background-color: #F3F3f4;
     font-size: 12px;
+}
+.text__input:focus, .text__area:focus, .email__input:focus{
+    background-color: #ffffff;
+   
+
+}
+.text__input:hover, .text__area:hover, .email__input:hover{
+
+    border: solid 1px #DCDFE6;
 }
 .email__input{
 

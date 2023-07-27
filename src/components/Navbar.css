@@ -120,12 +120,12 @@
     text-decoration: none;
     letter-spacing: 1px;
     display: flex;
-    /* color: #687076; */
-    /* color: white; */
+    color: #687076;
     text-transform: capitalize;
     font-size: 16px;
     font-weight: bold;
     font-family: 'Questrial', sans-serif;
+
   
   }
 

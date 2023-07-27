@@ -1,11 +1,5 @@
-@keyframes slideRight {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
-  }
+
+  
   
 .home__content__container{
     height: 100%;
@@ -17,19 +11,23 @@
     flex-direction: column;
    
 }
-.intro{
+/* .intro{
     margin-block: 10%;
     padding-block: 10%;
-}
+} */
 .intro, .outro{
+    padding-top: 10%;
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     font-family: 'Inter';
     color: #33353B;
-    width: 90vw;
+    width: 100vw;
     font-weight: 400;
     position: relative;
     perspective: 1000px;
+ 
     /* background-color: red; */
   
 }
@@ -48,16 +46,26 @@
 
   }
 
-  .intro__heading {
+.intro__heading {
     text-align: center;
     font-family: 'Lato';
     font-size: 45px;
     font-weight: 400;
-    background-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(16, 16, 79, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(16, 16, 79, 1) 35%, rgba(0, 212, 255, 1) 200%);
     color: transparent;
-    -webkit-background-clip: text; /* For Safari */
+    -webkit-background-clip: text;
     background-clip: text;
-    animation: slideRight 5s linear infinite;
+    background-position: 0;
+    animation: animateBackground 5s linear infinite;
+   
+}
+@keyframes animateBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 .intro__heading span{
@@ -73,7 +81,7 @@
     text-align: center;
     color: #33353B;
     padding: 10% 5% 10% 5%;
-    /* background-color: red; */
+    background-color: white;
   
 }
 
@@ -119,7 +127,11 @@
 .shadow{
 
     border-radius:7px;
-    box-shadow: 0 0 20px rgba(128, 127, 127, 0.2);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1),
+              1px 0px 1px rgba(0, 0, 0, 0.1),
+              0px 10px 15px rgba(0, 0, 0, 0.1);
+
+
     margin-block: 10%;
    
 
