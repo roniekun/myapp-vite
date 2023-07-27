@@ -31,6 +31,15 @@
         transition: .3s;
         margin-bottom: 2%;
 }
+.qoute::before{
+
+        content: '"';
+}
+
+.qoute::after{
+
+        content: '"';
+}
 
 .text{
        

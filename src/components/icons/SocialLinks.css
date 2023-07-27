@@ -1,5 +1,7 @@
 .social__links__container{
     display: flex;
+    height: fit-content;
+    width: fit-content;
     flex-direction: row;
     
 }
@@ -17,11 +19,14 @@
 }
 
 .icon__container{
-
-  padding: 10px 10px 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px   5px 10px;
   border-radius: 50%;
   margin: 0px;
- 
+  height: 35px;
+  width: 35px; 
 }
 .userHandle__container{
   padding: 10px 0px 5px 0px;
@@ -51,7 +56,7 @@
 
   .social__icon svg:hover {
     scale: 1.01;
-    transform: translateY(-5%);
+
 
   } 
  
@@ -60,7 +65,6 @@
 .link__btn:hover{
   
     scale: 1.01;
-    transform: translateY(-5%);
     filter: brightness(125%);
 
     

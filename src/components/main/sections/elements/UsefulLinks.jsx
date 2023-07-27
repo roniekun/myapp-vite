@@ -13,14 +13,16 @@ const UsefulLinks = () => {
           <a href="https://netlify.com" target="_blank" rel="noopener noreferrer">Netlify</a>
         </li>
         <li className='link' >
-          <a href="https://realtimecolors.com" target="_blank" rel="noopener noreferrer">Realtime Colors</a>
+          <a href="https://fonts.google.com" target="_blank" rel="noopener noreferrer">Google Fonts</a>
         </li>
         <li className='link' >
           <a href="https://console.firebase.google.com/" target="_blank" rel="noopener noreferrer">Firebase</a>
         </li>
         <li className='link' >
-          <a href="https://fonts.google.com" target="_blank" rel="noopener noreferrer">Google Fonts</a>
+          <a href="https://realtimecolors.com" target="_blank" rel="noopener noreferrer">Realtime Colors</a>
         </li>
+ 
+      
       </ul>
     </div>
   )
