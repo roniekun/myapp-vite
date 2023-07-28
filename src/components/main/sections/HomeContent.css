@@ -273,7 +273,7 @@ h3{
 .contact_form_container{
     width: 90%;
     height: 700px;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -10%);
   
 }
 .request_btn{

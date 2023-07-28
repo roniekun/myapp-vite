@@ -20,7 +20,7 @@ const HomeContent = () => {
           Unlock your visual story:<br /> 
           <h3><span>Transforming Visions into Digital Masterpiece</span></h3>
         </h1>
-        <b className='request_btn' onClick={handleClick}>
+        <b className='request_btn' data-copy-text='roniebenitez01@gmail.com'  onClick={handleClick}>
           Request Project <span className="material-symbols-outlined">trending_flat</span>
         </b>
       </div>
