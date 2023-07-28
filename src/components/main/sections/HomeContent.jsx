@@ -7,12 +7,13 @@ const HomeContent = () => {
   // const [showContactForm, setShowContactForm] = useState(false);
 
 
+  const email = 'roniebenitez01@gmail.com';
+  const subject = 'Request Project';
+  
   const handleClick = () => {
 
-    const emailPlaceholder = 'roniebenitez01@gmail.com';
-    const subject = 'Request Project';
-    const gmailComposeURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(emailPlaceholder)}&su=${encodeURIComponent(subject)}`;
-    window.open(gmailComposeURL, '_blank');
+    const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+    window.location.href = mailtoUrl;
   };
 
   return (
