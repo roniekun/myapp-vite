@@ -29,7 +29,7 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
       <ThemeContext.Consumer>
         {(themeContext) => (
           <nav 
-          className={showNavbar ? 'navbar__container' : 'navbar__hidden'}  
+          className={showNavbar ? 'navbar_container' : 'navbar_hidden'}  
           id={`component-${themeContext.theme}`}>
             
             <>

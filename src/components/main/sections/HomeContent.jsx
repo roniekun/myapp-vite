@@ -6,15 +6,16 @@ const HomeContent = () => {
 
   return (
     <div className='home__content__container'>
-      <div className='first__container'>
-        <p>
+      <div className='first_container'>
+        <h1 className='hero'>Unlock your visual story:<br/> <span>Transforming Visions into Digital Masterpiece</span> </h1>
+        <p className='p_tag_home'>
           Ronie is a web-developer and photography enthusiast.<br/> He also has a keen eye for designs. <br/>
         </p>
       </div>
 
-      <div className='second__container'>
+      <div className='second_container'>
         <h3>Web Development</h3> 
-        <p>
+        <p className='p_tag_home'>
           He creates websites using the ReactJS Framework and is currently expanding his expertise in front-end development. <br/>
         </p>
       </div>

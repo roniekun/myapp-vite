@@ -1,5 +1,5 @@
 
-.navbar__container {
+.navbar_container {
 
     box-sizing: border-box;
     display: flex;
@@ -20,7 +20,7 @@
 
   
   }
-  .navbar__hidden{
+  .navbar_hidden{
     /* transform: translateY(-100%); */
     top:0;
     box-sizing: border-box;
@@ -41,7 +41,7 @@
    
   
   }
-  .navbar__container::before{
+  .navbar_container::before{
     content: '';
     width: 100%;
     /* background-image: linear-gradient(147deg, #2c3e50  49%, #000000 100%); */
@@ -57,7 +57,7 @@
   }
 
 
-  .navbar__container::after{
+  .navbar_container::after{
     content: '';
     width: 100%;
     /* background-image: linear-gradient(147deg, #2c3e50  49%, #000000 100%); */
@@ -71,7 +71,7 @@
 
   }
 
-  .navbar__hidden::after{
+  .navbar_hidden::after{
 
     content: '';
     margin: 0 auto;
@@ -155,7 +155,7 @@
   
   @media (max-width: 600px) {
   
-    .navbar__container {
+    .navbar_container {
       /* animation: show 0.5s cubic-bezier(.29,.3,0,.95) forwards; */
       transform: 0.5s cubic-bezier(.29,.3,0,.95);
       display: flex;
@@ -163,9 +163,9 @@
       overflow-x: hidden;
       justify-content: space-between;
       height: 100vh;
-      width: 80vw;
+      width: 85vw;
       /* background-color: #0E2E47; */
-      background-color: #3D3D3D;
+      background-color: #0B0F19;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
       overflow-y: hidden;
       z-index: 9999;
@@ -181,7 +181,7 @@
    
     }
 
-    .navbar__container::before, .navbar__container::after,   .navbar__hidden::after{
+    .navbar_container::before, .navbar_container::after,   .navbar_hidden::after{
       display: none;
 
     }
@@ -192,7 +192,7 @@
      
     }
      */
-    .navbar__hidden {
+    .navbar_hidden {
 
       /* animation: hide 0.5s cubic-bezier(.29,.3,0,.95) ; */
       transform: translateX(-100%);
@@ -204,7 +204,7 @@
       height: 100vh;
       width: 80vw;
       /* background-color: #0E2E47; */
-      background-color: #3D3D3D;
+      background-color: #0B0F19;;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
       overflow-y: hidden;
       z-index: 9999;
