@@ -1,16 +1,18 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import './HomeContent.css';
-import ContactForm from './elements/ContactForm';
-import PageModal from './PageModal';
+// import ContactForm from './elements/ContactForm';
+// import PageModal from './PageModal';
 
 const HomeContent = () => {
-  const [showContactForm, setShowContactForm] = useState(false);
+  // const [showContactForm, setShowContactForm] = useState(false);
 
 
   const handleClick = () => {
 
-    setShowContactForm(!showContactForm);
-   
+    const emailPlaceholder = 'roniebenitez01@gmail.com';
+    const subject = 'Request Project';
+    const gmailComposeURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(emailPlaceholder)}&su=${encodeURIComponent(subject)}`;
+    window.open(gmailComposeURL, '_blank');
   };
 
   return (
@@ -49,7 +51,7 @@ const HomeContent = () => {
           I hope my work leaves you inspired and eager to embark on future collaborations.
         </p>
       </div>
-      {showContactForm && <PageModal zIndex={'9999'} showContactForm={showContactForm}/>}
+      {/* {showContactForm && <PageModal zIndex={'9999'} showContactForm={showContactForm}/>}
       {showContactForm &&
        <div className= {showContactForm  ? 'contact_form_container' : 'hidden'}>
         <span  onClick={handleClick} style={{color: 'white', position: 'absolute', right: '0', cursor: 'pointer', margin: '5%', 
@@ -57,10 +59,7 @@ const HomeContent = () => {
         close
         </span>
        <ContactForm /></div> 
-     }
-  
-
- 
+     } */}
     </div>
   );
 };
