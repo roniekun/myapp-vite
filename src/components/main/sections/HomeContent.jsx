@@ -16,10 +16,11 @@ const HomeContent = () => {
   return (
     <div className='home__content__container'>
       <div className='first_container'>
-        <h1 className='hero'>
+        <h1 className='hero'> 
           Unlock your visual story:<br /> 
-          <h3><span>Transforming Visions into Digital Masterpiece</span></h3>
-        </h1>
+          </h1>
+          <h3 className='sub_hero'>Transforming Visions into Digital Masterpiece</h3>
+   
         <b className='request_btn' data-copy-text='roniebenitez01@gmail.com'  onClick={handleClick}>
           Request Project <span className="material-symbols-outlined">trending_flat</span>
         </b>

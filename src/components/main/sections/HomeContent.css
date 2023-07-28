@@ -62,12 +62,14 @@
    
  
 }
-h3 span{
+.sub_hero{
     font-size: 45px;
     color: #687076;
     font-weight: 500;
     line-height: 1;
     height: fit-content;
+    align-self: center;
+    width: 90vw;
 
 }
 .request_btn {
@@ -257,12 +259,14 @@ h3 span{
    
  
 }
-h3 span{
-    font-size: 30px;
+.sub_hero{
+    font-size: 28px;
     font-weight: 400;
     height: fit-content;
     line-height: 1;
+    color: white;
     z-index: 1;
+    width: 90vw;
   
 
 }
@@ -282,7 +286,8 @@ h3 span{
   
 }
 .request_btn{
-    margin: 10% 5%;
+    margin:  5% 15% 5% 5%;
     font-size: 24px;
+    z-index: 2;
 }
 }
