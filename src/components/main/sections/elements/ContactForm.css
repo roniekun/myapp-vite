@@ -18,6 +18,7 @@
     margin-bottom: 50px;
     font-size: 45px;
     color: #0a1f44;
+    font-family: 'Teko';
    
 }
 .first__layer{
@@ -97,7 +98,8 @@
     cursor: pointer;
     letter-spacing: 1px;
     line-height: 1;
-    background-color: #202020;;
+    background-color: #202020;
+    font-family: 'Teko';
 
 
 }

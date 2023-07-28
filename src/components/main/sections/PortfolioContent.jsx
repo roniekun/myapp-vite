@@ -12,7 +12,7 @@ const PortfolioContent = () => {
     <ThemeContext.Consumer>
   {({ theme }) => (
     <>
-      <section id={`component-${theme}`} className='portfolio__first__section' >
+      <div id={`component-${theme}`} className='portfolio__first__section' >
       <div className='hero__text__container'>
 
       <h1 className='hero__text'>Design</h1>
@@ -21,31 +21,33 @@ const PortfolioContent = () => {
     
       </div>
     <div>
-        <p className='description'> Specialize in creating stunning website landing pages and portfolios 
-                that showcase your unique brand and captivate your audience. 
+        <p  className='portfolio__ptag'> Specialize in creating stunning website landing pages and portfolios 
+                that showcase your unique brand and captivate your audience. <br/>
                 With my expertise in web design and content creation, I help businesses
                 and individuals establish a strong online presence that leaves a lasting impression.</p>
     </div>
-      </section>
+      </div>
 
-      <section id={`component-${theme}`} className='portfolio__second__section'>
+      <div id={`component-${theme}`} className='portfolio__second__section'>
 
       <h1 className='services'>Services</h1>
-
-      <div>
+      <div className='services__container'>
       <h2>Website Landing Pages</h2>
-      <p className='description'>Crafts visually appealing and user-friendly landing pages that effectively communicate your message and drive conversions.<br/> 
+      <p className='portfolio__ptag'>Crafts visually appealing and user-friendly landing pages that effectively communicate your message and drive conversions.<br/> 
       Whether you're launching a new product, promoting a service, or running a campaign, our landing pages will capture your audience's attention and generate measurable results.
       </p>
+      </div>
+      <div className='services__container'>
       <h2>Portfolio Creation</h2>
-      <p className='description'> Stand out from the competition with a professionally designed portfolio that showcases your skills, projects, and accomplishments.<br/>
+      <p className='portfolio__ptag'> Stand out from the competition with a professionally designed portfolio that showcases your skills, projects, and accomplishments.<br/>
         Tailor each portfolio to reflect your personal brand or company image, ensuring it leaves a memorable impact on potential clients and employers.
       </p>
-</div>
+      </div>
+
 
   
 
-        </section>
+        </div>
         
       </>
         )}

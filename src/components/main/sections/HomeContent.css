@@ -1,4 +1,12 @@
+.qoute::before{
 
+    content: '"';
+}
+
+.qoute::after{
+
+    content: '"';
+}
   
   
 .home__content__container{
@@ -9,14 +17,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 175px;
+
    
 }
 
 .first__container{
     font-size: 50px;
     font-family: 'Teko';
-    background-color: red;
+    background-color: white;
     width: 100vw;
     height: 400px;
 
@@ -32,14 +40,14 @@
 .third__container{
     font-size: 35px;
     font-family: 'Teko';
-    background-color: red;
+    background-color: white;
     width: 100vw;
     height: 400px;
 }
-.first__container{
+.forth__container{
     font-size: 50px;
     font-family: 'Teko';
-    background-color: red;
+    background-color: #363A3D;
     width: 100vw;
     height: 400px;
 

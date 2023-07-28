@@ -4,9 +4,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 75px;
     position: relative;
-    width: 100vw;
+    width: 100vw;    padding-top: 175px;
+    background-color: #181818;
   
     }
     

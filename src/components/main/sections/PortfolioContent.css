@@ -1,6 +1,5 @@
 .portfolio__first__section{
         height:100%;
-        border-bottom: #0E0F10 solid; 
         display: flex;
         flex-direction: column;
         width: 100vw;
@@ -8,13 +7,16 @@
         position: relative;
         padding: 10%;
         color: black;
+        font-family:  'Teko';
+        background-color: white;
+        
         
        
        
 }
 
 .hero__text__container{
-   
+        font-family:  'Teko';
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -29,17 +31,9 @@
         letter-spacing: 3px;
         font-size: 75px;
         transition: .3s;
-        margin-bottom: 2%;
-}
-.qoute::before{
-
-        content: '"';
+        margin-bottom: 2%;  font-family:  'Teko';
 }
 
-.qoute::after{
-
-        content: '"';
-}
 
 .text{
        
@@ -56,6 +50,9 @@
         position: relative;
         padding: 10%;
         color: black;
+        font-family:  'Teko';
+        background-color: white;
+        
 
 
 
@@ -64,10 +61,30 @@
 
         font-size: 45px;
         font-weight: 600;
+        font-family:  'Teko';
 
 
 }
 
+.portfolio__ptag{
+
+
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:400px;
+        font-size: 28px;
+        width: 90vw;
+        text-align: center;
+}
+
+.services__container{
+
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+}
 
 @media (max-width: 600px) {
     .first__section{

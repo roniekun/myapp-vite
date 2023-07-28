@@ -237,7 +237,10 @@
       width: 100%;
   
     }
-  
+  .navbar__hidden .navbar__link{
+
+    color: white;
+  }
     .navbar__link {
       font-family: 'Teko', sans-serif;
       display: flex;
