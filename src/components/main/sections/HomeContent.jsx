@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './HomeContent.css';
 import ContactForm from './elements/ContactForm';
-// import PageModal from '../../../assets/PageModal';
+import PageModal from './PageModal';
 
 const HomeContent = () => {
   const [showContactForm, setShowContactForm] = useState(false);
@@ -48,18 +48,14 @@ const HomeContent = () => {
           I hope my work leaves you inspired and eager to embark on future collaborations.
         </p>
       </div>
-
-      {showContactForm && <div style={{ zIndex: '9999',
-        width:'100vw', height: '100vh', backgroundColor: 'black', position:'relative'}}>
-      
-    
+      {showContactForm && <PageModal zIndex={'9999'} showContactForm={showContactForm}/>}
+      {showContactForm &&
        <div className= {showContactForm  ? 'contact_form_container' : 'hidden'}>
         <span  onClick={handleClick} style={{color: 'white', position: 'absolute', right: '0', cursor: 'pointer', margin: '5%', 
         background:'black'}} className="material-symbols-outlined">
         close
         </span>
        <ContactForm /></div> 
-         </div>
      }
   
 

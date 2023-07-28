@@ -68,31 +68,50 @@ h3{
     height: fit-content;
 
 }
-.request_btn{
+.request_btn {
+    font-size: 28px;
+    font-family: 'Questrial';
+    border: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 16px 9px;
+    margin: 2% 5%;
+    cursor: pointer;
+    font-weight: 500;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #142A39;
+    color: white;
+    position: relative; /* Make sure the element has a positioned container */
+    overflow: hidden; /* Hide overflowing animation */
+  }
+  .request_btn::before{
+    content: '';
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    background-color: #FFB600;;
+    z-index: -1;
+    transform: translateX(-100%) skew(20deg);
+    transition: .5s ease;
 
-font-size: 28px;
-font-family: 'Questrial';
-border: none;
-width: fit-content;
-height: fit-content;
-padding: 16px 9px;
-margin: 2% 5%;
-cursor: pointer;
-font-weight: 500;
-z-index: 1;
-display: flex;
-justify-content: center;
-align-items: center;
-border-radius: 3px;
+    
 
+  }
+ 
+  .request_btn:hover::before {
+    transform: translateX(0) skew(50deg);
+}
+.request_btn:hover{
+
+    color: black;
 
 }
 
-.request_btn:hover{
-color:white;
-background-color: black;
-    }
-
+  
 .contact_form_container{
     display: block;
     width: 700px;
@@ -177,19 +196,6 @@ background-color: black;
 
 
 
-
-
-@keyframes animateBackground {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-
-
-
 .shadow{
 
     border-radius:7px;
@@ -225,7 +231,7 @@ background-color: black;
     font-size: 50px;
     font-family: 'Teko';
     background-color: white;
-    height: 800px;
+    height: 720px;
     display: flex;
     justify-content: flex-end;
     margin-bottom: 5%;
@@ -241,9 +247,9 @@ background-color: black;
 
 }
 .hero{
-   width: 80vw;
+   width: 90vw;
    align-self: center;
-   font-size: 60px;
+   font-size: 55px;
    
  
 }
@@ -256,7 +262,7 @@ background-color: black;
 
 }
 .p_tag_home{
-    width: 80vw;
+    width: 90vw;
     align-self: center;
     font-size: 18px;
     color: black;
@@ -271,6 +277,6 @@ background-color: black;
   
 }
 .request_btn{
-    margin: 5% 10%;
+    margin: 5% 5%;
 }
 }
