@@ -10,3 +10,12 @@
 
     }
   
+    @media (max-width: 600px) {
+        .about__container{
+
+            padding-top:50px;
+            margin: 0;
+            /* background-color: red; */
+          
+        }
+    }
