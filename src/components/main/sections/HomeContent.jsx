@@ -1,5 +1,6 @@
 // import React, { useState } from 'react';
 import './HomeContent.css';
+import { ReactComponent as TrendingFlat } from './trending_flat.svg'
 // import ContactForm from './elements/ContactForm';
 // import PageModal from './PageModal';
 
@@ -25,7 +26,7 @@ const HomeContent = () => {
           <h3 className='sub_hero'>Transforming Visions into Digital Masterpiece</h3>
    
         <b className='request_btn' data-copy-text='roniebenitez01@gmail.com'  onClick={handleClick}>
-          Request Project <span className="material-symbols-outlined">trending_flat</span>
+          Request Project <span className="material-symbols-outlined"><TrendingFlat/></span>
         </b>
       </div>
 
@@ -39,14 +40,14 @@ const HomeContent = () => {
 
       <div className='third__container'>
         <h3>Photography</h3>
-        <p className='qoute'>
+        <p className='p_tag_home qoute'>
           I find joy in the art of Photography.<br />
           While I don't limit myself to a specific niche,
           my portfolio reflects a diverse array of captivating shots.
         </p>
       </div>
       <div className='forth__container'>
-        <p>
+        <p className='p_tag_home'>
           <span>Stay awhile </span><br /> immerse yourself in the fusion of technology and artistic expression.<br />
           Whether you're intrigued by my coding wizardry or drawn to the beauty of visual storytelling,<br />
           I hope my work leaves you inspired and eager to embark on future collaborations.
