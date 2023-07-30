@@ -150,9 +150,9 @@
 
 .p_tag_home{
     width: 80vw;
-    align-self: center;
-    font-family: 'Poppins';
-    font-size: 28px;
+    text-align: center;
+    font-family: 'Manrope';
+    font-size: 24px;
     font-weight: 400;
     word-spacing: 1px;
     margin-top: 3%;
@@ -161,6 +161,8 @@
 }
 .ptag_title{
     text-align: center;
+    font-family: 'Manrope';
+
 }
 
 .second_container{
@@ -366,5 +368,15 @@
 
     font-size: 18px;
     z-index: 2;
+
+}
+.tech_lists li{
+
+    display: flex;
+    flex: 0 0 10%;
+    height: 100px;
+    margin: 10%;
+    font-size: 24px;
+ 
 }
 }

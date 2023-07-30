@@ -69,7 +69,7 @@ const HomeContent = () => {
     <ul>
         <li>HTML</li>
         <li>CSS</li>
-        <li>Javascript ES7/ES8</li>
+        <li>Javascript</li>
         <li>React</li>
         <li>Git/Github</li>
         <li>npm</li>
