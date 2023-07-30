@@ -29,23 +29,23 @@ const HomeContent = () => {
           Request Project <span className="material-symbols-outlined"><TrendingFlat/></span>
         </b>
       </div>
-
+      <div className='second_layer'>
       <div className='second_container'>
         <h3 className='ptag_title'>Web Development</h3>
         <p className='p_tag_home'>
           He creates websites using React and is currently expanding his expertise in front-end development.
-          <br />
         </p>
       </div>
-
-      <div className='third__container'>
+      <div className='third_container'>
         <h3 className='ptag_title'>Photography</h3>
         <p className='p_tag_home qoute'>
-          I find joy in the art of Photography.<br />
+          I find joy in the art of Photography.
           While I don't limit myself to a specific niche,
           my portfolio reflects a diverse array of captivating shots.
         </p>
       </div>
+      </div>
+
       <div className='forth__container'>
         <p className='p_tag_home'>
           <span>Stay awhile </span><br /> immerse yourself in the fusion of technology and artistic expression.<br />
