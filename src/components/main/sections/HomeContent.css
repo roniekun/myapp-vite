@@ -129,6 +129,7 @@
     width: 100vw;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-top: 10%;
 }
   
 .contact_form_container{
@@ -178,7 +179,7 @@
     display: flex;
     font-size: 50px;
     font-family: 'Teko';
-    height: 800px;
+    height: 600px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -187,7 +188,8 @@
     width: 40vw;
     box-sizing: border-box;
     border-radius: 7px;
-    padding-bottom: 15%;
+    padding-bottom: 12%;
+    background-color: #EEEEEA;
 
 
 
@@ -209,7 +211,7 @@
     display: flex;
     font-size: 50px;
     font-family: 'Teko';
-    height: 800px;
+    height: 600px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -218,7 +220,8 @@
     width: 40vw;
     box-sizing: border-box;
     border-radius: 7px;
-    padding-bottom: 15%;
+    padding-bottom: 10%;
+    background-color: #EEEEEA;
     
    
 
