@@ -25,21 +25,21 @@ const HomeContent = () => {
           </h1>
           <h3 className='sub_hero'>Transforming Visions into Digital Masterpiece</h3>
    
-        <b className='request_btn' data-copy-text='roniebenitez01@gmail.com'  onClick={handleClick}>
+        <b className='request_btn shadow' data-copy-text='roniebenitez01@gmail.com'  onClick={handleClick}>
           Request Project <span className="material-symbols-outlined"><TrendingFlat/></span>
         </b>
       </div>
 
       <div className='second_container'>
-        <h3>Web Development</h3>
+        <h3 className='ptag_title'>Web Development</h3>
         <p className='p_tag_home'>
-          He creates websites using the ReactJS Framework and is currently expanding his expertise in front-end development.
+          He creates websites using React and is currently expanding his expertise in front-end development.
           <br />
         </p>
       </div>
 
       <div className='third__container'>
-        <h3>Photography</h3>
+        <h3 className='ptag_title'>Photography</h3>
         <p className='p_tag_home qoute'>
           I find joy in the art of Photography.<br />
           While I don't limit myself to a specific niche,
@@ -52,7 +52,7 @@ const HomeContent = () => {
           Whether you're intrigued by my coding wizardry or drawn to the beauty of visual storytelling,<br />
           I hope my work leaves you inspired and eager to embark on future collaborations.
         </p>
-      </div>
+      </div> 
       {/* {showContactForm && <PageModal zIndex={'9999'} showContactForm={showContactForm}/>}
       {showContactForm &&
        <div className= {showContactForm  ? 'contact_form_container' : 'hidden'}>
@@ -62,6 +62,24 @@ const HomeContent = () => {
         </span>
        <ContactForm /></div> 
      } */}
+     <div className='fifth_container'>
+
+          <h1 className='ptag_title'>Technology I use </h1> 
+          <div className='tech_lists'>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript ES7/ES8</li>
+        <li>React</li>
+        <li>Git/Github</li>
+        <li>npm</li>
+        <li>Firebase</li>
+        <li>Sony Alpha</li>
+        <li>Adobe Ligthroom</li>
+    </ul>
+</div>
+     
+        </div>
     </div>
   );
 };
