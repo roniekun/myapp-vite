@@ -13,7 +13,9 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
     { to: '/', text: 'home' },
     { to: '/about', text: 'about' },
     { to: '/portfolio', text: 'work' },
+    { to: '/blog', text: 'blog' },
     { to: '/contact', text: 'contact' },
+    
   ];
 
   const handleLinkClick = () => {
@@ -35,7 +37,7 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
             <>
             {/* <SiteLogo Left={'0'}/> */}
             <div className="links__container">
-              {links.map((link, index) => (
+              {links.map((link) => (
                 <div
                   className="link__wrapper"
                   key={link.to}

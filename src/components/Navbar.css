@@ -94,7 +94,8 @@
     flex-direction: column;
     opacity: 1;
     justify-content: space-evenly;
-    width: 85px;
+    width: fit-content;
+    margin: 10px;
     height: 40px;
   }
 
@@ -105,7 +106,7 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    width: 350px;
+    width: fit-content;
     height: 60px;
     
    
@@ -121,9 +122,10 @@
     letter-spacing: 1px;
     display: flex;
     color: #687076;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    line-height: 21px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 400;
     font-family: 'Manrope', sans-serif;
 
   

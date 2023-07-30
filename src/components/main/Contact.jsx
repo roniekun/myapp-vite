@@ -9,8 +9,7 @@ function Contact({isSmallScreen}) {
       <ContactContent/>
       <Footer isSmallScreen={isSmallScreen}/>
     </div>
-
-    
+ 
     </>
     
   )

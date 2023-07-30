@@ -62,7 +62,7 @@ const HomeContent = () => {
         </span>
        <ContactForm /></div> 
      } */}
-     <div className='fifth_container'>
+     {/* <div className='fifth_container'>
 
           <h1 className='ptag_title'>Technology I use </h1> 
           <div className='tech_lists'>
@@ -79,7 +79,7 @@ const HomeContent = () => {
     </ul>
 </div>
      
-        </div>
+        </div> */}
     </div>
   );
 };

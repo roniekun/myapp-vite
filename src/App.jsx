@@ -7,6 +7,7 @@ import Home from './components/main/Home';
 import Contact from './components/main/Contact';
 import About from './components/main/About';
 import Portfolio from './components/main/Portfolio';
+import Blog from './components/main/Blog';
 import NotFound from './components/main/NotFound';
 import Menu from './components/icons/Menu';
 import './App.css';
@@ -95,6 +96,7 @@ const App = () => {
                   <Route path='/' element={<Home isSmallScreen={isSmallScreen} showNavbar={showNavbar} />} />
                   <Route path='/about' element={<About isSmallScreen={isSmallScreen} showNavbar={showNavbar} />} />
                   <Route path='/portfolio' element={<Portfolio isSmallScreen={isSmallScreen}  showNavbar={showNavbar} />} />
+                  <Route path='/blog' element={<Blog isSmallScreen={isSmallScreen}  showNavbar={showNavbar} />} />
                   <Route path='/contact' element={<Contact isSmallScreen={isSmallScreen}  showNavbar={showNavbar} />} />
                   <Route component={NotFound} />
                 </Routes>
