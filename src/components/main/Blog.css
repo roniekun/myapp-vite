@@ -18,8 +18,17 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
+
     
   
+}
+@media(max-width: 600px){
+    
+    .blog_container{
+
+        padding-top: 50px;
+    }
+
 }
     
   

@@ -2,7 +2,8 @@ import React from 'react'
 import './Blog.css';
 import Footer from '../Footer'
 
-const Blog = ({}) => {
+const Blog = ({isSmallScreen
+}) => {
   return (
     
     <div  className='blog_container'>
@@ -12,7 +13,7 @@ const Blog = ({}) => {
         </div>
   
 
-        <Footer/>
+        <Footer isSmallScreen={isSmallScreen}/>
     </div>
    
   )
