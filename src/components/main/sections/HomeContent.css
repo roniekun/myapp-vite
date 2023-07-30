@@ -158,21 +158,25 @@
     transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
 }
 
-.p_tag_home{
+.ptag_home{
     position: relative;
     width: 80%;
     text-align: center;
     font-family: 'Manrope';
-    font-size:16px;
+    font-size:14px;
     font-weight: 400;
     word-spacing: 1px;
-
     z-index: 2;
+    line-height:29px;
+    font-size: 18px;
    
 }
-.ptag_title{
+.ptag_home_title{
     text-align: center;
     font-family: 'Manrope';
+    font-weight:700;
+    font-size: 28px;
+    line-height: 40px;
 
 }
 
@@ -338,17 +342,20 @@
 
    
 }
+.first_container{
+    height: 500px;
+}
 
-.first_container, .second_container, .third_container, .forth__container{
+.second_container, .third_container, .forth__container{
     
     font-size: 50px;
     font-family: 'Teko';
-    height: 720px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin:5%;
-    padding-top: 20%;
+    padding-top: 50%;
     width: 90vw;
   
 
@@ -363,6 +370,7 @@
    font-size: 40px;
    font-weight: 400;
    padding-inline: 10px;
+   
    
  
 }
@@ -379,13 +387,21 @@
   
 
 }
-.p_tag_home{
+
+.ptag_home_title{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.ptag_home{
     width: 80vw;
     font-size: 18px;
     color: black;
     z-index: 2;
     font-weight: 400;
     text-align: center;
+    font-size: 18px;
+    
 }
 .second_layer{
  flex-direction: column;

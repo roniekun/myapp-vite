@@ -31,14 +31,14 @@ const HomeContent = () => {
       </div>
       <div className='second_layer'>
       <div className='second_container'>
-        <h3 className='ptag_title'>Web Development</h3>
-        <p className='p_tag_home'>
+        <h4 className='ptag_home_title'>Web Development</h4>
+        <p className='ptag_home'>
           He creates websites using React and is currently expanding his expertise in front-end development.
         </p>
       </div>
       <div className='third_container'>
-        <h3 className='ptag_title'>Photography</h3>
-        <p className='p_tag_home qoute'>
+        <p className='ptag_home_title'>Photography</p>
+        <p className='ptag_home qoute'>
           I find joy in the art of Photography.
           While I don't limit myself to a specific niche,
           my portfolio reflects a diverse array of captivating shots.
@@ -47,7 +47,7 @@ const HomeContent = () => {
       </div>
 
       <div className='forth__container'>
-        <p className='p_tag_home'>
+        <p className='ptag_home'>
           <span>Stay awhile </span><br /> immerse yourself in the fusion of technology and artistic expression.<br />
           Whether you're intrigued by my coding wizardry or drawn to the beauty of visual storytelling,<br />
           I hope my work leaves you inspired and eager to embark on future collaborations.
