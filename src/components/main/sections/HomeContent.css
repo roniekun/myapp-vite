@@ -25,7 +25,6 @@
 .first_container{
     display: flex;
     font-size: 50px;
-    font-family: 'Teko';
     height: 800px;
     display: flex;
     justify-content: center;
@@ -57,33 +56,32 @@
 .hero{
    position: relative;
    width: fit-content;
-   font-size: 70px;
-   line-height: 1;
+   font-size: 50px;
+   line-height: 60px;
    color: #FFB600;
    z-index: 1;
    margin-top: 10%;
-
-
-   
+   font-family: 'Poppins';
+   text-align: center;
  
 }
 .sub_hero{
     position: relative;
-    font-size: 28px;
+    font-size: 24px;
     color: #687076;
     font-weight: 500;
     line-height: 1;
     height: fit-content;
     width: fit-content;
-    font-family: 'Poppins';
+    font-family: 'Manrope';
    
 
 }
 .request_btn {
-    font-size: 24px;
-    font-family: 'Questrial';
+    font-size: 18px;
+    font-family: 'Manrope';
     border: none;
-    font-weight: 500;
+    font-weight: 400;
     width: fit-content;
     height: fit-content;
     padding: 5px 10px;
@@ -162,13 +160,13 @@
     position: relative;
     width: 80%;
     text-align: center;
-    font-family: 'Manrope';
     font-size:14px;
     font-weight: 400;
     word-spacing: 1px;
     z-index: 2;
-    line-height:29px;
+    line-height:28px;
     font-size: 18px;
+    padding-block: 5px;
    
 }
 .ptag_home_title{
@@ -176,14 +174,13 @@
     font-family: 'Manrope';
     font-weight:700;
     font-size: 28px;
-    line-height: 40px;
+    line-height: 50px;
 
 }
 
 .second_container{
     display: flex;
     font-size: 50px;
-    font-family: 'Teko';
     height: 600px;
     display: flex;
     justify-content: flex-end;
@@ -215,7 +212,6 @@
 .third_container{
     display: flex;
     font-size: 50px;
-    font-family: 'Teko';
     height: 600px;
     display: flex;
     justify-content: flex-end;
@@ -244,19 +240,10 @@
      
 
 }
-.forth__container{
-    font-size: 50px;
-    font-family: 'Teko';
-    background-color: #363A3D;
-    width: 100vw;
-    height: 400px;
-
-}
 
 .forth__container{
     display: flex;
     font-size: 50px;
-    font-family: 'Teko';
     height: 800px;
     display: flex;
     justify-content: center;
@@ -273,7 +260,6 @@
 
     display: flex;
     font-size: 50px;
-    font-family: 'Teko';
     height: 800px;
     display: flex;
     justify-content: center;
@@ -349,7 +335,6 @@
 .second_container, .third_container, .forth__container{
     
     font-size: 50px;
-    font-family: 'Teko';
     height: 500px;
     display: flex;
     justify-content: center;
@@ -367,9 +352,10 @@
 
 }
 .hero{
-   font-size: 40px;
-   font-weight: 400;
+   font-size: 28px;
+   font-weight: 600;
    padding-inline: 10px;
+   line-height: 34px;
    
    
  
@@ -416,7 +402,7 @@
 }
 .request_btn{
 
-    font-size: 18px;
+    font-size: 14px;
     z-index: 2;
 
 }

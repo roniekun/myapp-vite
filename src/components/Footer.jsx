@@ -31,7 +31,7 @@ function Footer({ showNavbar, isSmallScreen}) {
        <div style={{ alignSelf: 'center'}}>
         <h1 style={{
               color: 'white',
-              fontFamily: 'Inter', 
+              fontFamily: 'Manrope', 
               letterSpacing: '2px',
               marginBottom: "24px", 
               fontSize: '16px'}}>

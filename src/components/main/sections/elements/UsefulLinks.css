@@ -7,16 +7,17 @@
     flex-direction: column;
     align-items: center; 
     padding-block: 5%;
-    font-family: 'Teko';
-    font-size: 18px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    text-transform: uppercase;
 }
 .links{
 
     display: flex;
     flex-direction: row;
     font-size: 12px;
-
     font-family: 'Manrope';
+    text-transform: capitalize;
 }
 
 .link{

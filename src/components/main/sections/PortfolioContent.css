@@ -5,9 +5,8 @@
         width: 100vw;
         align-items: center;
         position: relative;
-        padding: 10%;
+
         color: black;
-        font-family:  'Teko';
         background-color: white;
         
         
@@ -16,22 +15,26 @@
 }
 
 .hero__text__container{
-        font-family:  'Teko';
+        font-family:  'Poppins';
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         position: relative;
         width: 80%;
+      
+        
 
         
 }       
 
 .hero__text{
         letter-spacing: 3px;
-        font-size: 75px;
+        font-size: 70px;
         transition: .3s;
-        margin-bottom: 2%;  font-family:  'Teko';
+        margin-bottom: 2%;  
+        font-family:  'Poppins';
+        font-weight: 900;
 }
 
 
@@ -50,7 +53,6 @@
         position: relative;
         padding: 10%;
         color: black;
-        font-family:  'Teko';
         background-color: white;
         
 
@@ -60,8 +62,8 @@
 .services{
 
         font-size: 45px;
-        font-weight: 600;
-        font-family:  'Teko';
+        font-weight: 800;
+      
 
 
 }
@@ -79,7 +81,8 @@
         justify-content: center;
         padding: 2%;
         height:400px;
-        font-size: 24px;
+        font-size: 18px;
+        line-height: 28px;
         width: 90vw;
         font-weight: 400;
         text-align: center;
