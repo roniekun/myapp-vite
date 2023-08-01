@@ -71,8 +71,9 @@ const HomeContent = () => {
         <li>CSS</li>
         <li>Javascript</li>
         <li>React</li>
-        <li>Git/Github</li>
+        <li>Git</li>
         <li>npm</li>
+         <li>Vite</li>
         <li>Firebase</li>
         <li>Sony Alpha</li>
         <li>Adobe Ligthroom</li>

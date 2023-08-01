@@ -11,7 +11,7 @@
     
 }
 .menu__btn{
-    color: #f5f5f5;
+    color: #585858;
     letter-spacing: 2px;
 
 }
@@ -19,7 +19,7 @@
 .menu__btn:hover{
 
     filter: brightness(125%);
-    color: white;
+    color: rgb(8, 8, 8);
 }
 .menu__text__container{
     
