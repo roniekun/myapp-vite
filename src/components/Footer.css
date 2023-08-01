@@ -5,7 +5,8 @@
     justify-content: space-around;
     align-items: center;
     width: 100vw;
-    background-color: rgb(32, 32, 32);
+    background: rgb(32,32,32);
+    background: linear-gradient(356deg, rgba(32,32,32,1) 29%, rgba(41,41,42,1) 76%);
     padding: 50px 100px 100px 100px;
     border-bottom: 1px solid black;
     height: max-content;

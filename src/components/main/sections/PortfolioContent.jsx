@@ -24,16 +24,26 @@ const PortfolioContent = () => {
         <div className='grid_item'>Animation</div>
         <div className='grid_item'>Component-Based</div>
         <div className='grid_item'>Interactive</div>
-        <div className='grid_item'>Rendering Speed</div>
+        <div className='grid_item'>Fast Rendering</div>
       
    
       </div>
 
     <div className='card'>
-        <p  className='portfolio_ptag'> Specialize in creating stunning website landing pages and portfolios 
+        <p  className='portfolio_ptag color'> Specialize in creating stunning website landing pages and portfolios 
                 that showcase your unique brand and captivate your audience. <br/>
                 With my expertise in web design and content creation, I help businesses
                 and individuals establish a strong online presence that leaves a lasting impression.</p>
+
+                <div className='cards'>
+                  
+                <div className='card_item'>Showcase Your Expertise</div>
+                <div className='card_item'>Reach Global Audience</div>
+                <div className='card_item'>Stablish Your Brand Identity</div>
+             
+              
+
+             </div>
     </div>
       </div>
 

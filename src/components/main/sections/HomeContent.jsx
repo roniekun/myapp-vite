@@ -49,8 +49,8 @@ const HomeContent = () => {
       <div className='forth__container'>
         <p className='ptag_home'>
           <span>Stay awhile </span><br /> immerse yourself in the fusion of technology and artistic expression.<br />
-          Whether you're intrigued by my coding wizardry or drawn to the beauty of visual storytelling,<br />
-          I hope my work leaves you inspired and eager to embark on future collaborations.
+          Whether you're intrigued by coding wizardry or drawn to the beauty of visual storytelling,<br />
+          I hope this leaves you inspired and eager to embark on future collaborations.
         </p>
       </div> 
       {/* {showContactForm && <PageModal zIndex={'9999'} showContactForm={showContactForm}/>}

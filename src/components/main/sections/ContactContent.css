@@ -16,7 +16,7 @@
 }
 @media (max-width: 600px) {
  .contact__content__container{
-    padding-top: 75px;
+    padding-top: 0px;
  }
 
 .email{
